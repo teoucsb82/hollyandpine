@@ -1,8 +1,9 @@
 html
-  head
-    title Holly and Pine
+  head lang='en'
+    = render 'shared/meta'
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    title Holly and Pine
   body
     = yield
