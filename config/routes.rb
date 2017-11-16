@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  get 'home/index'
-
-  root 'home#index'end
+  root 'home#index'
+  resources :about, only: [:index]
+  resources :contact, only: [:index]
+  resources :home, only: [:index]
+end
