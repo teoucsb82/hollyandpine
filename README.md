@@ -1,3 +1,3 @@
 # hollyandpine
 
-my diiiiiiiiick
+hello, my name is joe
