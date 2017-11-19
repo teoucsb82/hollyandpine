@@ -1,0 +1,41 @@
+#register-form
+  h3.log-title REGISTER
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    .form-group
+      = f.email_field :email,
+        id: 'register-email',
+        class: 'form-control',
+        data: { error: "*Please fill out this field" },
+        placeholder: "EMAIL",
+        required: ""
+      .help-block.with-errors
+    .form-group
+      = f.password_field :password,
+        id: 'register-password',
+        class: 'form-control',
+        data: { error: "*Please fill out this field" },
+        placeholder: "PASSWORD",
+        required: ""
+      .help-block.with-errors
+    .form-group
+      = f.password_field :password_confirmation,
+      id: 'register-cpassword',
+      class: 'form-control',
+      placeholder: "CONFIRM PASSWORD",
+      required: ""
+      .help-block.with-errors
+    .log-line.reg-form-1.no-margin
+      .pull-left
+        .checkbox.checkbox-primary.space-bottom
+          label.hide
+            input type="checkbox" /
+          input#checkbox2 type="checkbox"
+          label for="checkbox2" 
+            span
+              a href="#x" I Agree to Terms &amp; Conditions
+      .pull-right
+        = f.submit "Register",
+        id: 'reg-submit',
+        class: 'btn btn-md btn-primary-filled btn-log btn-rounded',
+        type: "submit"
+        .clearfix

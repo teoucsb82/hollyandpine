@@ -1,0 +1,13 @@
+section#header-banner.demo-5
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 Login Or Register
+section#login-register
+  .container
+    = devise_error_messages!
+    .row
+      .col-sm-6
+        = render 'devise/shared/login_form'
+      .col-sm-6
+        = render 'devise/shared/registration_form'

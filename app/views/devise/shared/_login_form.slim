@@ -1,0 +1,24 @@
+#login-form
+  h3.log-title LOGIN
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .form-group
+      = f.email_field :email, id: 'username', class: 'form-control', data: { error: '*Please fill out this field'}, placeholder: "EMAIL", required: true
+      .help-block.with-errors
+    .form-group
+      = f.password_field :password, autocomplete: 'off', class: 'form-control', placeholder: 'PASSWORD', required: true
+      .help-block.with-errors
+    .log-line
+      .pull-left
+        - if devise_mapping.rememberable?
+          .checkbox.checkbox-primary.space-bottom
+            label.hide
+              input type="checkbox"
+            = f.check_box :remember_me, id: 'checkbox1'
+            label for="checkbox1" 
+              span
+                strong Remember Me
+      .pull-right
+        = f.submit 'Log In', class: 'btn btn-md btn-primary-filled btn-log btn-rounded'
+        #msgSubmit.h3.text-center.hidden
+        .clearfix
+  a.forgot-password href="#x"  Forgot your Password?

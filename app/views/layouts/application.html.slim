@@ -7,4 +7,9 @@ html
     = csrf_meta_tags
     title Holly and Pine
   body
+    = render 'shared/preloader'
+    = render 'shared/header'
+    #top
     = yield
+    = render 'shared/scroll_to_top'
+    = render 'shared/footer'
