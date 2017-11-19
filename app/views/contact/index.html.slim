@@ -1,2 +1,54 @@
-h1 Contact#index
-p Find me in app/views/contact/index.html.slim
+section#header-banner.demo-5
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 Contact
+          p Get in touch with me
+#page-content.container
+  .row
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-map-marker
+      h5 ADDRESS
+      p 33 King Street, Suite 133
+      p Miami, Florida
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-smartphone
+      h5 PHONE
+      p
+        | Sales:
+        a href="tel:+0123456789"  +0123 456 789
+      p
+        | Support:
+        a href="tel:+0987654321"  +0987 654 321
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-envelope
+      h5 EMAIL
+      p
+        | Sales:
+        a href="mailto:sales@hollyandpine.ca"  sales@hollyandpine.ca
+      p
+        | Support:
+        a href="support:hello@hollyandpine.ca"  support@yoursite.com
+  .row.contact-area
+    .col-sm-6.map
+      #map
+    .col-sm-6.contact-form-area
+      #contact-form
+        form#contactForm data-toggle="validator" 
+          .form-group
+            input#name.form-control placeholder=("FULL NAME") required="" type="text" /
+            .help-block.with-errors
+          .form-group
+            input#email.form-control placeholder="EMAIL" required="" type="email" /
+            .help-block.with-errors
+          .form-group
+            textarea#message.form-control placeholder="MESSAGE" required="" rows="5" 
+            .help-block.with-errors
+          button#form-submit.btn.btn-md.btn-primary-filled.btn-form-submit type="submit"  SUBMIT FORM
+          #msgSubmit.h3.text-center.hidden
+          .clearfix
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA40uewXP25u1A4o9u8ueBimZZwIdNLkY"></script>
