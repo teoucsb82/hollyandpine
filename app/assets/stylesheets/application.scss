@@ -11,10 +11,11 @@
  * file per style scope.
  *
  *= require_tree .
- *= require ms/style
  *= require_self
  */
+
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700,900);
 @import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "ms/style";
