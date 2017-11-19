@@ -7,7 +7,10 @@ section#my-account
   .container
     .row
       .col-sm-2.account-sidebar
-        = image_tag 'account-img.jpg', alt: 'account-img'
+        - if @user.picture
+          = cl_image_tag @user.picture
+        - else
+          = image_tag 'account-img.jpg', alt: 'account-img'
         p = link_to 'PERSONAL INFO', '#personal-info', class: 'page-scroll'
         p = link_to 'SHIPPING INFO', '#shipping-info', class: 'page-scroll'
         p = link_to 'MY ORDERS', '#my-orders', class: 'page-scroll'
@@ -23,8 +26,14 @@ section#my-account
                 span Edit
           .row
             .col-xs-6.col-sm-4.col-md-2
-              = image_tag 'account-img.jpg', alt: 'account-img'
-              a.btn.btn-primary.btn-xs.btn-rounded.no-margin href="#x"  Change Image
+              - if @user.picture
+                = cl_image_tag @user.picture
+              - else
+                = image_tag 'account-img.jpg', alt: 'account-img'
+              = form_for(@user) do |f|
+                = f.hidden_field :picture_cache
+                = f.file_field :picture
+                = f.submit 'Change Image', class: 'btn btn-primary btn-xs btn-rounded no-margin'
             .col-xs-6.col-sm-8.col-md-10
               p
                 | Full Name:

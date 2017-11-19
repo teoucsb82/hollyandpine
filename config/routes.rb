@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :about, only: [:index]
   resources :contact, only: [:index]
   resources :home, only: [:index]
-  resources :users, path: 'my-account', only: [] do
+  resources :users, path: 'my-account', only: [:update] do
     get '/', to: :show, on: :collection
   end
 end
