@@ -19,6 +19,5 @@
                 strong Remember Me
       .pull-right
         = f.submit 'Log In', class: 'btn btn-md btn-primary-filled btn-log btn-rounded'
-        #msgSubmit.h3.text-center.hidden
         .clearfix
-  a.forgot-password href="#x"  Forgot your Password?
+  = link_to 'Forgot Password?', new_password_path(resource), class: 'forgot-password'

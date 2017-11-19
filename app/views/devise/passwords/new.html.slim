@@ -1,0 +1,16 @@
+section#header-banner.demo-5
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 Forgot your password?
+section#forgot-password
+  .container
+    h3.log-title Reset Password
+    = devise_error_messages!
+    = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = devise_error_messages!
+      .form-group
+        = f.email_field :email, id: 'email', class: 'form-control', data: { error: '*Please fill out this field'}, placeholder: "EMAIL", required: true
+        .help-block.with-errors
+      .form-group
+        = f.submit "Send me reset password instructions", class: 'btn btn-md btn-primary-filled btn-log btn-rounded'
