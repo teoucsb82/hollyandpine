@@ -1,0 +1,146 @@
+section#header-banner.demo-5
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 My Account
+section#my-account
+  .container
+    .row
+      .col-sm-2.account-sidebar
+        = image_tag 'account-img.jpg', alt: 'account-img'
+        p = link_to 'PERSONAL INFO', '#personal-info', class: 'page-scroll'
+        p = link_to 'SHIPPING INFO', '#shipping-info', class: 'page-scroll'
+        p = link_to 'MY ORDERS', '#my-orders', class: 'page-scroll'
+        p = link_to 'MY REVIEWS', '#my-reviews', class: 'page-scroll'
+        p = link_to 'WISHLIST', '#wishlist', class: 'page-scroll'
+      .col-sm-10.account-info
+        #personal-info.account-info-content
+          h4
+            | PERSONAL INFO
+            span.pull-right
+              a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+                i.lnr.lnr-pencil
+                span Edit
+          .row
+            .col-xs-6.col-sm-4.col-md-2
+              = image_tag 'account-img.jpg', alt: 'account-img'
+              a.btn.btn-primary.btn-xs.btn-rounded.no-margin href="#x"  Change Image
+            .col-xs-6.col-sm-8.col-md-10
+              p
+                | Full Name:
+                span John Doe
+              p
+                | Country:
+                span USA
+              p
+                | Email:
+                span me@mysite.com
+              p
+                | Phone:
+                span +0123 456 789
+              p
+                | Date of Birth:
+                span Aug. 13, 1991
+        #shipping-info.account-info-content
+          h4
+            | SHIPPING INFO
+            span.pull-right
+              a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+                i.lnr.lnr-pencil
+                span Edit
+          p.space-bottom
+            span
+              strong John Doe - me@mysite.com
+          p
+            | Country:
+            span USA
+          p
+            | State:
+            span Florida
+          p
+            | City:
+            span Miami
+          p
+            | Address Line:
+            span S Miami Ave, SW 20th, Suite 3864
+          p
+            | ZIP Code:
+            span 33222
+          .account-info-footer
+            a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+              i.fa.fa-plus
+              span Add New Address
+        #my-orders.account-info-content
+          h4
+            | MY ORDERS
+            span.pull-right
+              a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+                i.lnr.lnr-pencil
+                span Edit
+          p
+            a href="#x"  Order #38726
+            span - Paid & Shipped
+            | Tracking No:
+            span #TRCK182736
+          p
+            a href="#x"  Order #34823
+            span - Completed on 25.10.2016
+          p
+            a href="#x"  Order #23463
+            span - Completed on 16.08.2016
+        #my-reviews.account-info-content
+          h4
+            | MY REVIEWS
+            span.pull-right
+              a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+                i.lnr.lnr-pencil
+                span Edit
+          p
+            a href="#x"  Order #38726
+            |
+            span
+              | Review:
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-half-o
+          p
+            a href="#x"  Order #34823
+            |
+            span
+              | Review:
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-o
+          p
+            a href="#x"  Order #23463
+            |
+            span
+              | Review:
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+        #wishlist.account-info-content
+          h4
+            | WISHLIST
+            span.pull-right
+              a.btn.btn-sm.btn-primary.btn-rounded.no-margin href="#x" 
+                i.lnr.lnr-pencil
+                span Edit
+          p
+            a href="#x"  Product 1
+            |
+            span Price: $29
+          p
+            a href="#x"  Product 2
+            |
+            span Price: $59
+          p
+            a href="#x"  Product 3
+            |
+            span Price: $69

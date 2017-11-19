@@ -7,6 +7,7 @@ header
           span.text-primary: strong $100
           span.right
             - if user_signed_in?
+              = link_to 'My Account', users_path
               = link_to 'Log Out', destroy_user_session_path, method: :delete
               = link_to 'shopping-cart.html', class: 'shopping-cart'
                 i.fa.fa-shopping-cart
