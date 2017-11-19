@@ -1,3 +1,568 @@
-.container
-  h1 Sup Canadian Bae
-  p Hello, this is Katie.
+/! preloader
+#preloader
+  .spinner.spinner-round
+/! / preloader
+#top
+/! header
+header
+  /! nav
+  nav.navbar.navbar-default.navbar-fixed-top
+    .top-menu.top-menu-inverse
+      .container
+        p
+          span.space-left
+            | FREE SHIPPING ON ORDERS OVER
+            span.text-primary
+              strong $100
+          span.right
+            a href="login-register.html" 
+              span MY ACCOUNT
+            a.shopping-cart href="shopping-cart.html" 
+              i.fa.fa-shopping-cart
+              span.cart-badge 2
+      /! / container
+    /! / top-menu-inverse
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand href="index.html" 
+          img alt="logo" src="images/logo.png" /
+      /! / navbar-header
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.active
+            a href="index5.html" 
+              span HOME
+          li
+            a href="about.html" 
+              span ABOUT
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
+              span BLOG
+              span.dropdown-icon
+            ul.dropdown-menu.animated.zoomIn.fast
+              li
+                a href="blog.html" 
+                  span BLOG FULLWIDTH
+              li
+                a href="blog-masonry.html" 
+                  span BLOG MASONRY
+              li
+                a href="blog-sidebar.html" 
+                  span BLOG SIDEBAR
+              li
+                a href="single-post-full.html" 
+                  span POST FULLWIDTH
+              li
+                a href="single-post.html" 
+                  span POST SIDEBAR
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
+              span SHOP
+              span.dropdown-icon
+            ul.dropdown-menu.animated.zoomIn.fast
+              li
+                a href="shop.html" 
+                  span FULL WIDTH
+              li
+                a href="shop-right.html" 
+                  span RIGHT SIDEBAR
+              li
+                a href="shop-left.html" 
+                  span LEFT SIDEBAR
+              li
+                a href="shop-masonry.html" 
+                  span MASONRY
+              li
+                a href="single-product.html" 
+                  span SINGLE PRODUCT
+              li
+                a href="single-product2.html" 
+                  span SINGLE PRODUCT 2
+              li
+                a href="single-product3.html" 
+                  span SINGLE PRODUCT 3
+          li.dropdown
+            a.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
+              span PAGES
+              span.dropdown-icon
+            ul.dropdown-menu.animated.zoomIn.fast
+              li
+                a href="faq.html" 
+                  span FAQ
+              li
+                a href="shopping-cart.html" 
+                  span SHOPPING CART
+              li
+                a href="login-register.html" 
+                  span LOGIN / REGISTER
+              li
+                a href="my-account.html" 
+                  span MY ACCOUNT
+              li
+                a href="checkout.html" 
+                  span CHECKOUT
+              li
+                a href="404.html" 
+                  span 404 PAGE
+              li
+                a href="components.html" 
+                  span COMPONENTS
+          li
+            a href="contact.html" 
+              span CONTACT
+      /! / nav-collapse
+    /! / container
+  /! / nav
+  /! header-banner
+  #header-banner.demo-5
+    .banner-content.w-top-nav.text-center
+      .banner-border
+        .banner-info
+          h1 Minimal Shop
+          p Minimal Furniture Shop
+        /! / banner-info
+      /! / banner-border
+    /! / banner-content
+  /! / header-banner
+/! / header
+/! content
+/! collections
+section#collections
+  .container
+    h2.hide COLLECTIONS
+    .row
+      .col-sm-6.collection
+        a href="#" 
+          img alt="" src="images/f-collection1.jpg" /
+      /! / collection
+      .col-sm-6.collections
+        .row
+          .col-sm-12.collection
+            a href="#" 
+              img alt="" src="images/f-collection2.jpg" /
+          /! / collection
+          .col-sm-6.collection
+            a href="#" 
+              img alt="" src="images/f-collection3.jpg" /
+          /! / collection
+          .col-sm-6.collection
+            a href="#" 
+              img alt="" src="images/f-collection4.jpg" /
+          /! / collection
+        /! / row
+      /! / collections
+    /! / row
+  /! / container
+/! / collections
+/! features section 3col
+section#features
+  .container
+    .row
+      /! feature-block
+      .col-md-4.feature-center.bg-light
+        .feature.block
+          .feature-icon
+            i.lnr.lnr-gift
+          h5 FREE SHIPPING
+          p Free worldwide shipping
+      /! / col-md-4
+      /! / feature-block
+      /! feature-block
+      .col-md-4.feature-center.bg-dark
+        .feature.block
+          .feature-icon
+            i.lnr.lnr-clock
+          h5 FAST DELIVERY
+          p Fast worldwide delivery
+      /! / col-md-4
+      /! / feature-block
+      /! feature-block
+      .col-md-4.feature-center.bg-light
+        .feature.block
+          .feature-icon
+            i.lnr.lnr-exit
+          h5 MONEY BACK
+          p 30 Days money back
+      /! / col-md-4
+      /! / feature-block
+    /! / row
+  /! / container
+/! / features section 3col
+/! categories
+section#categories
+  .container
+    .row
+      .col-sm-4.category
+        a href="#x" 
+        .category-item
+          img alt="" src="images/category1.jpg" /
+          .overlay
+            .caption
+              h4 BEDROOM
+        /! / category-item
+      /! / category
+      .col-sm-4.category
+        a href="#x" 
+        .category-item
+          img alt="" src="images/category2.jpg" /
+          .overlay
+            .caption
+              h4 LIVING
+        /! / category-item
+      /! / category
+      .col-sm-4.category
+        a href="#x" 
+        .category-item
+          img alt="" src="images/category3.jpg" /
+          .overlay
+            .caption
+              h4 KITCHEN
+        /! / category-item
+      /! / category
+    /! / row
+  /! / container
+/! / categories
+/! shop section
+section#shop
+  .container
+    .page-header.no-margin-top.text-center
+      h3 LATEST PRODUCTS
+    /! / page-header
+    /! product filter
+    ul.product-filter.list-inline.text-center
+      li
+        a.active data-group="all" href="#"  ALL
+      li
+        a data-group="living" href="#"  LIVING ROOM
+      li
+        a data-group="bedroom" href="#"  BEDROOM
+      li
+        a data-group="kitchen" href="#"  KITCHEN
+    /! end product filter
+    ul#grid.row.shop.list-unstyled
+      /! product
+      li.col-xs-6.col-md-4.product.m-product data-groups="[\"bedroom\"]" 
+        .img-bg-color.primary
+          h5.product-price $249
+          a.product-link href="single-product2.html" 
+          /! / product-link
+          img alt="" src="images/f-m-product.jpg" /
+          /! / product-image
+          /! product-hover-tools
+          .product-hover-tools
+            a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+              i.lnr.lnr-eye
+            a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+              i.lnr.lnr-cart
+          /! / product-hover-tools
+          /! product-details
+          .product-details
+            h5.product-title PRODUCT TITLE
+            p.product-category CATEGORY
+          /! / product-details
+        /! / img-bg-color
+      /! / product
+      /! product
+      li.col-xs-6.col-md-4.product.m-product data-groups="[\"living\", \"kitchen\"]" 
+        .img-bg-color.primary
+          h5.product-price/
+  del $399
+  | $199
+  a.product-link href="single-product2.html" 
+  /! / product-link
+  img alt="" src="images/f-m-product.jpg" /
+  /! / product-image
+  /! product-hover-tools
+  .product-hover-tools
+    a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+      i.lnr.lnr-eye
+    a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+      i.lnr.lnr-cart
+  /! / product-hover-tools
+  /! product-details
+  .product-details
+    h5.product-title PRODUCT TITLE
+    p.product-category CATEGORY
+  /! / product-details
+  /! / img-bg-color
+  /! / product
+  /! product
+  li.col-xs-6.col-md-4.product.m-product data-groups="[\"bedroom\"]" 
+    .img-bg-color.primary
+      h5.product-price $379
+      a.product-link href="single-product2.html" 
+      /! / product-link
+      img alt="" src="images/f-m-product.jpg" /
+      /! / product-image
+      /! product-hover-tools
+      .product-hover-tools
+        a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+          i.lnr.lnr-eye
+        a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+          i.lnr.lnr-cart
+      /! / product-hover-tools
+      /! product-details
+      .product-details
+        h5.product-title PRODUCT TITLE
+        p.product-category CATEGORY
+      /! / product-details
+    /! / img-bg-color
+  /! / product
+  /! product
+  li.col-xs-6.col-md-4.product.m-product data-groups="[\"kitchen\"]" 
+    .img-bg-color.primary
+      h5.product-price $269
+      a.product-link href="single-product2.html" 
+      /! / product-link
+      img alt="" src="images/f-m-product.jpg" /
+      /! / product-image
+      /! product-hover-tools
+      .product-hover-tools
+        a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+          i.lnr.lnr-eye
+        a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+          i.lnr.lnr-cart
+      /! / product-hover-tools
+      /! product-details
+      .product-details
+        h5.product-title PRODUCT TITLE
+        p.product-category CATEGORY
+      /! / product-details
+    /! / img-bg-color
+  /! / product
+  /! product
+  li.col-xs-6.col-md-4.product.m-product data-groups="[\"living\"]" 
+    .img-bg-color.primary
+      h5.product-price $339
+      a.product-link href="single-product2.html" 
+      /! / product-link
+      img alt="" src="images/f-m-product.jpg" /
+      /! / product-image
+      /! product-hover-tools
+      .product-hover-tools
+        a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+          i.lnr.lnr-eye
+        a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+          i.lnr.lnr-cart
+      /! / product-hover-tools
+      /! product-details
+      .product-details
+        h5.product-title PRODUCT TITLE
+        p.product-category CATEGORY
+      /! / product-details
+    /! / img-bg-color
+  /! / product
+  /! product
+  li.col-xs-6.col-md-4.product.m-product data-groups="[\"kitchen\"]" 
+    .img-bg-color.primary
+      h5.product-price $259
+      a.product-link href="single-product2.html" 
+      /! / product-link
+      img alt="" src="images/f-m-product.jpg" /
+      /! / product-image
+      /! product-hover-tools
+      .product-hover-tools
+        a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
+          i.lnr.lnr-eye
+        a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+          i.lnr.lnr-cart
+      /! / product-hover-tools
+      /! product-details
+      .product-details
+        h5.product-title PRODUCT TITLE
+        p.product-category CATEGORY
+      /! / product-details
+    /! / img-bg-color
+  /! / product
+  /! sizer
+  li.col-xs-6.col-md-4.shuffle_sizer
+  /! / sizer
+  /! / products
+  /! / container
+/! / shop section
+/! blog section 3col
+section#blog-small
+  .container
+    .page-header.no-margin.text-center
+      h3 LATEST POSTS
+    p.text-center.space-top Sed imperdiet vitae ipsum a tincidunt. Vivamus id ligula turpis. Duis viverra arcu quis.
+    .row
+      /! post-block
+      .col-sm-4
+        .post-block
+          a href="single-post.html" 
+            img alt="" src="images/post-img.jpg" /
+          .small-post-text
+            h5
+              a href="single-post.html"  SINGLE POST
+            p.small-post-meta AUG 16, 2016
+            p.space-bottom Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...
+            p.small-post-footer
+              a href="single-post.html"  READ MORE
+              span.post-icons.pull-right
+                a href="#x" 
+                  i.lnr.lnr-thumbs-up
+                a href="#x" 
+                  i.lnr.lnr-bubble
+          /! / small-post-text
+        /! / post-block
+      /! / col-md-4
+      /! / post-block
+      /! post-block
+      .col-sm-4
+        .post-block
+          a href="single-post-full.html" 
+            img alt="" src="images/post-img.jpg" /
+          .small-post-text
+            h5
+              a href="single-post-full.html"  FULLWIDTH POST
+            p.small-post-meta AUG 16, 2016
+            p.space-bottom Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...
+            p.small-post-footer
+              a href="single-post-full.html"  READ MORE
+              span.post-icons.pull-right
+                a href="#x" 
+                  i.lnr.lnr-thumbs-up
+                a href="#x" 
+                  i.lnr.lnr-bubble
+          /! / small-post-text
+        /! / post-block
+      /! / col-md-4
+      /! / post-block
+      /! post-block
+      .col-sm-4
+        .post-block
+          a href="single-post.html" 
+            img alt="" src="images/post-img.jpg" /
+          .small-post-text
+            h5
+              a href="single-post.html"  POST WITH SIDEBAR
+            p.small-post-meta AUG 16, 2016
+            p.space-bottom Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...
+            p.small-post-footer
+              a href="single-post.html"  READ MORE
+              span.post-icons.pull-right
+                a href="#x" 
+                  i.lnr.lnr-thumbs-up
+                a href="#x" 
+                  i.lnr.lnr-bubble
+          /! / small-post-text
+        /! / post-block
+      /! / col-md-4
+      /! / post-block
+    /! / row
+  /! / container
+/! / blog section 3col
+/! newsletter
+section#newsletter
+  .container
+    .page-header.text-center
+      h3 SUBSCRIBE TO THE NEWSLETTER
+    .input-group
+      input.form-control.rounded placeholder=("EMAIL ADDRESS HERE...") type="text" /
+      span.input-group-btn
+        button.btn.btn-primary-filled.btn-left.btn-newsletter.inside.btn-rounded type="button" 
+          i.lnr.lnr-enter
+          span SUBSCRIBE
+    /! /input-group
+  /! / container
+/! / newsletter
+/! / content
+/! scroll to top
+a.scroll-to-top.page-scroll.is-hidden data-nav-status="toggle" href="#top" 
+  i.fa.fa-angle-up
+/! / scroll to top
+/! footer
+footer.light-footer
+  .widget-area
+    .container
+      .row
+        .col-md-4.widget
+          .about-widget
+            .widget-title-image
+              img alt="" src="images/logo2.png" /
+            p Vivamus consequat lacus quam, nec egestas quam egestas sit amet. Suspendisse et risus gravida tellus aliquam ullamcorper. Pellentesque elit dolor, ornare ut lorem nec, convallis nibh accumsan lacus morbi leo lipsum.
+          /! / about-widget
+        /! / widget
+        /! / first widget
+        .col-md-2.widget
+          .widget-title
+            h4 BRANDS
+          .link-widget
+            .info
+              a href="#x"  Brand 1
+            .info
+              a href="#x"  Brand 2
+            .info
+              a href="#x"  Brand 3
+            .info
+              a href="#x"  Brand 4
+        /! / widget
+        /! / second widget
+        .col-md-2.widget
+          .widget-title
+            h4 SUPPORT
+          .link-widget
+            .info
+              a href="#x"  Terms & Conditions
+            .info
+              a href="#x"  Shipping & Return
+            .info
+              a href="faq.html"  F.A.Q
+            .info
+              a href="contact.html"  Contact
+        /! / widget
+        /! / third widget
+        .col-md-4.widget
+          .widget-title
+            h4 CONTACT
+          .contact-widget
+            .info
+              p
+                i.lnr.lnr-map-marker
+                span Miami, S Miami Ave, SW 20th, Store No.1
+            .info
+              a href="tel:+0123456789" 
+                i.lnr.lnr-phone-handset
+                span +0123 456 789
+            .info
+              a href="mailto:hello@yoursite.com" 
+                i.lnr.lnr-envelope
+                span office@yoursite.com
+            .info
+              i.lnr.lnr-thumbs-up
+              span.social.text-left
+                a.no-margin href="#" 
+                  i.fa.fa-facebook
+                a href="#" 
+                  i.fa.fa-twitter
+                a href="#" 
+                  i.fa.fa-google-plus
+                a href="#" 
+                  i.fa.fa-linkedin
+                a href="#" 
+                  i.fa.fa-pinterest
+          /! / contact-widget
+        /! / widget
+        /! / fourth widget
+      /! / row
+    /! / container
+  /! / widget-area
+  .footer-info
+    .container
+      .pull-left.copyright
+        p
+          strong © MS - MINIMAL SHOP THEME
+      span.pull-right
+        img alt="" src="images/visa.png" /
+        img alt="" src="images/mastercard.png" /
+        img alt="" src="images/discover.png" /
+        img alt="" src="images/paypal.png" /
+    /! / container
+  /! / footer-info
+/! / footer

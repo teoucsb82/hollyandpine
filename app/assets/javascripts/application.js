@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require jquery.easing.min
+//= require scrolling-nav-sticky
+//= require custom
+//= require jquery.shuffle.min
+//= require preloader
+//= require hide-nav
 //= require_tree .
