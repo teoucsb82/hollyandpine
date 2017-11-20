@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  get 'users/show'
-
-  devise_for :users
   root 'home#index'
+  devise_for :users
+
+  namespace :admin do
+    get '/', to: 'admin#index'
+    resources :users, only: [:index, :show]
+  end
+
   resources :about, only: [:index]
   resources :contact, only: [:index]
   resources :home, only: [:index]
