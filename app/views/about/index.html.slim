@@ -1,2 +1,59 @@
-h1 About#index
-p Find me in app/views/about/index.html.slim
+section#header-banner.cover-about
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 About
+          p Aliquam pellentesque nunc enim
+#page-content.container
+  .section-w-image
+    .row
+      .col-sm-7.about-img
+        p
+      .col-sm-5.col-sm-offset-7.about-description
+        h4 ABOUT THE SHOP
+        p Quisque nec mi urna. Nam nec enim id erat bibendum tincidunt. Morbi maximus neque sed ex aliquet, in lobortis mi condimentum. Vestibulum laoreet placerat ex id viverra. Ut auctor odio magna, in vulputate lorem tempus sed. Quisque bibendum molestie lacus. Phasellus quis commodo ex, id volutpat purus. Quisque ac ante a tellus auctor molestie in ac sem. Mauris non ultricies ligula. Aliquam malesuada finibus magna a egestas.
+        p Vivamus eu lacus eros. Integer ornare scelerisque sapien ac blandit. Sed blandit diam vel tincidunt placerat. Sed a eleifend dui. Cras gravida dapibus sapien et rhoncus. Nulla facilisi. Donec vitae pharetra sapien.
+        p Nullam auctor ac erat in semper. Aliquam erat volutpat. Nullam malesuada nunc vel lectus ultrices.
+  section#team
+    .container
+      h2.text-center.space-top-2x THE TEAM
+      .row
+        .col-sm-4
+          .team.block.text-center
+            = image_tag 'team.jpg', alt: 'team'
+            .team-info-box
+              h6 Katharine Grace McGuillicutty Sellers
+              p.team-role CEO, Rump Shaker
+              p.social.text-center
+                = link_to '#'
+                  i.fa.fa-facebook
+                = link_to '#'
+                  i.fa.fa-twitter
+                = link_to '#'
+                  i.fa.fa-google-plus
+        .col-sm-4
+          .team.block.text-center
+            = image_tag 'team.jpg', alt: 'team'
+            .team-info-box
+              h6 T Double D's
+              p.team-role CTO, Rump Shaker in Training
+              p.social.text-center
+                = link_to '#'
+                  i.fa.fa-facebook
+                = link_to '#'
+                  i.fa.fa-twitter
+                = link_to '#'
+                  i.fa.fa-google-plus
+        .col-sm-4
+          .team.block.text-center
+            = image_tag 'team.jpg', alt: 'team'
+            .team-info-box
+              h6 Elon Musk
+              p.team-role Technical Advisor
+              p.social.text-center
+                = link_to '#'
+                  i.fa.fa-facebook
+                = link_to '#'
+                  i.fa.fa-twitter
+                = link_to '#'
+                  i.fa.fa-google-plus

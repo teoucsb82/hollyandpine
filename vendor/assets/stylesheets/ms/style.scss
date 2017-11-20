@@ -771,8 +771,15 @@ textarea:focus {
     background-color: $grey;
 }
 
-#header-banner.demo-6 {
-    background: url("https://res.cloudinary.com/hollyandpine/image/upload/v1511160621/contact.jpg") no-repeat;
+#header-banner.cover-contact {
+    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $grey;
+}
+
+#header-banner.cover-about {
+    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-color: $grey;
@@ -1971,14 +1978,14 @@ table.shopping-cart > tbody > tr > td {
 
 .about-img {
     position: absolute;
-    background: url(../about-img.jpg) scroll center no-repeat;
+    background: image-url('about-img.jpg') scroll center no-repeat;
     background-size: cover;
     height: 100%;
 }
 
 .about-me-img {
     position: absolute;
-    background: url(../about-me-img.jpg) scroll center no-repeat;
+    background: image-url('about-me-img.jpg') scroll center no-repeat;
     background-size: cover;
     height: 100%;
 }
