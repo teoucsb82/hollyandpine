@@ -22,4 +22,4 @@
 //= require map
 //= require validator.min
 //= require form-scripts
-//= require_tree .
+//= require home
