@@ -19,7 +19,6 @@
 //= require jquery.shuffle.min
 //= require preloader
 //= require hide-nav
-//= require map
 //= require validator.min
 //= require form-scripts
 //= require home
