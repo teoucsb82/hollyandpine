@@ -30,6 +30,15 @@ header
           li = link_to 'ABOUT', about_index_path
           li.dropdown
             a.dropdown-toggle aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href="#" role='button'
+              span SERVICES
+              span.dropdown-icon
+            ul.dropdown-menu.animated.zoomIn.fast
+              li = link_to 'All Packages', services_path
+              li.divider
+              - services.each do |service|
+                li = link_to service.name, service_path(service.id)
+          li.dropdown
+            a.dropdown-toggle aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href="#" role='button'
               span BLOG
               span.dropdown-icon
             ul.dropdown-menu.animated.zoomIn.fast
@@ -38,28 +47,4 @@ header
               li = link_to 'BLOG SIDEBAR', 'blog-sidebar.html'
               li = link_to 'POST FULLWIDTH', 'single-post-full.html'
               li = link_to 'POST SIDEBAR', 'single-post.html'
-          li.dropdown
-            a.dropdown-toggle aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href="#" role='button'
-              span SHOP
-              span.dropdown-icon
-            ul.dropdown-menu.animated.zoomIn.fast
-              li = link_to 'FULL WIDTH', 'shop.html'
-              li = link_to 'RIGHT SIDEBAR', 'shop-right.html'
-              li = link_to 'LEFT SIDEBAR', 'shop-left.html'
-              li = link_to 'MASONRY', 'shop-masonry.html'
-              li = link_to 'SINGLE PRODUCT', 'single-product.html'
-              li = link_to 'SINGLE PRODUCT 2', 'single-product2.html'
-              li = link_to 'SINGLE PRODUCT 3', 'single-product3.html'
-          li.dropdown
-            a.dropdown-toggle aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href="#" role='button'
-              span PAGES
-              span.dropdown-icon
-            ul.dropdown-menu.animated.zoomIn.fast
-              li = link_to 'FAQ', 'faq.html'
-              li = link_to 'SHOPPING CART', 'shopping-cart.html'
-              li = link_to 'LOGIN / REGISTER', 'login-register.html'
-              li = link_to 'MY ACCOUNT', 'my-account.html'
-              li = link_to 'CHECKOUT', 'checkout.html'
-              li = link_to '404 PAGE', '404.html'
-              li = link_to 'COMPONENTS', 'components.html'
           li = link_to 'CONTACT', contact_index_path

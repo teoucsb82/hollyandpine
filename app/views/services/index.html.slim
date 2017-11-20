@@ -1,0 +1,43 @@
+section#header-banner
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 Fashion Shop
+          p Fullwidth shop page
+section#shop.space-top-30
+  .container
+    p.shop-results.space-left
+      | Showing 
+      strong 1-12
+      |  of 
+      strong 36
+      |  items.
+      span.pull-right.space-right
+        select.selectpicker
+          optgroup label=("Sort By:") 
+            option Default
+            option Popularity
+            option Newness
+            option Rating
+            option Price Low to High
+            option Price High to Low
+    ul#grid.row.shop.list-unstyled
+      - 12.times do
+        li.col-xs-6.col-md-4.product.m-product data-groups='["mens"]'
+          .img-bg-color.primary
+            h5.product-price $49
+            a.product-link href="single-product.html" 
+            = image_tag 'm-product', alt: 'm-product'
+            .product-hover-tools
+              a.view-btn data-toggle="tooltip" href="single-product.html" title=("View Product") 
+                i.lnr.lnr-eye
+              a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
+                i.lnr.lnr-cart
+            .product-details
+              h5.product-title PRODUCT TITLE
+              p.product-category CATEGORY
+    li.col-xs-6.col-md-4.shuffle_sizer
+    .text-center.more-button.space-top-30
+      a.btn.btn-default-filled href="#x" 
+        i.lnr.lnr-sync
+        span LOAD MORE

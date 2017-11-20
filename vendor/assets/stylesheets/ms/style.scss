@@ -785,6 +785,13 @@ textarea:focus {
     background-color: $grey;
 }
 
+#header-banner.cover-services {
+    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $grey;
+}
+
 .banner-content {
     padding: 235px 0;
     margin-top: 80px;
