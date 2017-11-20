@@ -11,12 +11,9 @@ section#shop
         .product-content-area
           #product-slider.carousel.slide data-ride="carousel" 
             .carousel-inner role="listbox" 
-              .item.active
-                = image_tag 'product-slide1.jpg', alt: 'product-slide1'
-              .item
-                = image_tag 'product-slide2.jpg', alt: 'product-slide2'
-              .item
-                = image_tag 'product-slide3.jpg', alt: 'product-slide3'
+              - @service.images.each_with_index do |image, i|
+                .item class="#{'active' if i == 0 }"
+                  = image_tag image
             a.left.carousel-control data-slide="prev" href="#product-slider" role="button" 
               span.lnr.lnr-chevron-left aria-hidden="true" 
             a.right.carousel-control data-slide="next" href="#product-slider" role="button" 
