@@ -15,8 +15,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-classic',
       name: 'The Classic',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah',
+      header: '',
+      description: 'Classic wrapping for the holidays.',
       # Katie --
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
@@ -37,6 +37,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-elevated',
       name: 'The Elevated',
+<<<<<<< HEAD
       header: 'Classic Wrapping For The Holidays',
       description: 'Your gifts blah blah blah',
       images: [
@@ -48,6 +49,10 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
       ]
+=======
+      header: '',
+      description: 'Elevated wrapping for the holidays.'
+>>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
     )
   end
 
@@ -55,6 +60,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
+<<<<<<< HEAD
       header: 'Classic Wrapping For The Holidays',
       description: 'Your gifts blah blah blah',
       images: [
@@ -68,6 +74,10 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
       ]
+=======
+      header: '',
+      description: 'Gifts wrapped in the North Pole!'
+>>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
     )
   end
 
@@ -75,6 +85,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-custom',
       name: 'The Custom',
+<<<<<<< HEAD
       header: 'Classic Wrapping For The Holidays',
       description: 'Your gifts blah blah blah',
       images: [
@@ -88,6 +99,10 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
       ]
+=======
+      header: '',
+      description: 'Custom wrapping for the holidays.'
+>>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
     )
   end
 
@@ -95,8 +110,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'pickup-and-delivery',
       name: 'Pickup & Delivery',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      header: '',
+      description: 'Full service pick-up and delivery.'
     )
   end
 end
