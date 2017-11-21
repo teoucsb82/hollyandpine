@@ -22,9 +22,13 @@ module ServicesHelper
       # Basically, you can add as many image URLs as you want to this
       # 'images:' parameter. Each one should be a string, separated by commas
       images: [
-        '//res.cloudinary.com/hollyandpine/image/upload/v1511216848/UNADJUSTEDNONRAW_thumb_2624_pnajmx.jpg',
-        '//res.cloudinary.com/hollyandpine/image/upload/v1511216849/UNADJUSTEDNONRAW_thumb_2639_dkcc98.jpg',
-        '//res.cloudinary.com/hollyandpine/image/upload/v1511216848/UNADJUSTEDNONRAW_thumb_2624_pnajmx.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282291/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25f5.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25ea.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282291/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25e7.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282290/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25c7.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
       ]
     )
   end
@@ -34,7 +38,16 @@ module ServicesHelper
       id: 'the-elevated',
       name: 'The Elevated',
       header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      description: 'Your gifts blah blah blah',
+      images: [
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282348/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25d4.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282349/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25ef.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282348/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25e6.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282349/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25dc.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
+      ]
     )
   end
 
@@ -43,7 +56,18 @@ module ServicesHelper
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
       header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      description: 'Your gifts blah blah blah',
+      images: [
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282518/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25a3.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282519/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25af.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282519/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25a1.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25b3.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25bf.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282456/Product%20Images/Ribbons/fOekH0r3T4KHzPnHca1zUw_thumb_25f3.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
+      ]
     )
   end
 
@@ -52,7 +76,18 @@ module ServicesHelper
       id: 'the-custom',
       name: 'The Custom',
       header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      description: 'Your gifts blah blah blah',
+      images: [
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25e1.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25d2.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25c3.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2638.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_262d.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
+      ]
     )
   end
 
