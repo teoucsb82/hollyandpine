@@ -15,8 +15,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-classic',
       name: 'The Classic',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah',
+      header: '',
+      description: 'Classic wrapping for the holidays.'
       # Katie --
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
@@ -33,8 +33,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-elevated',
       name: 'The Elevated',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      header: '',
+      description: 'Elevated wrapping for the holidays.'
     )
   end
 
@@ -42,8 +42,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      header: '',
+      description: 'Gifts wrapped in the North Pole!'
     )
   end
 
@@ -51,8 +51,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-custom',
       name: 'The Custom',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      header: '',
+      description: 'Custom wrapping for the holidays.'
     )
   end
 
@@ -60,8 +60,8 @@ module ServicesHelper
     OpenStruct.new(
       id: 'pickup-and-delivery',
       name: 'Pickup & Delivery',
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah'
+      header: '',
+      description: 'Full service pick-up and delivery.'
     )
   end
 end
