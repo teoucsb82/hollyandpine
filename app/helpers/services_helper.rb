@@ -16,7 +16,7 @@ module ServicesHelper
       id: 'the-classic',
       name: 'The Classic',
       header: '',
-      description: 'Classic wrapping for the holidays.'
+      description: 'Classic wrapping for the holidays.',
       # Katie --
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
