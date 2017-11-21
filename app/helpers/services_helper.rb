@@ -21,6 +21,7 @@ module ServicesHelper
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
       # 'images:' parameter. Each one should be a string, separated by commas
+      price: 3,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282291/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25f5.jpg',
@@ -37,9 +38,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-elevated',
       name: 'The Elevated',
-<<<<<<< HEAD
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah',
+      price: 4,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282348/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25d4.jpg',
@@ -48,11 +47,9 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282349/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25dc.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
-      ]
-=======
+      ],
       header: '',
-      description: 'Elevated wrapping for the holidays.'
->>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
+      description: 'Elevated wrapping for the holidays.',
     )
   end
 
@@ -60,9 +57,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
-<<<<<<< HEAD
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah',
+      price: 5,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282518/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25a3.jpg',
@@ -73,11 +68,9 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282456/Product%20Images/Ribbons/fOekH0r3T4KHzPnHca1zUw_thumb_25f3.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
-      ]
-=======
+      ],
       header: '',
-      description: 'Gifts wrapped in the North Pole!'
->>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
+      description: 'Gifts wrapped in the North Pole!',
     )
   end
 
@@ -85,9 +78,7 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-custom',
       name: 'The Custom',
-<<<<<<< HEAD
-      header: 'Classic Wrapping For The Holidays',
-      description: 'Your gifts blah blah blah',
+      price: 6,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
@@ -98,11 +89,9 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_262d.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
-      ]
-=======
+      ],
       header: '',
-      description: 'Custom wrapping for the holidays.'
->>>>>>> 5b1c985cd4a362a1f2c6c8bb33eca8432d5f6566
+      description: 'Custom wrapping for the holidays.',
     )
   end
 
