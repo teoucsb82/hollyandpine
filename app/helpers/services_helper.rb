@@ -17,7 +17,7 @@ module ServicesHelper
       name: 'The Classic',
       header: '',
       description: 'Classic wrapping for the holidays.',
-      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
       # Katie --
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
@@ -51,7 +51,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Elevated wrapping for the holidays.',
-      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
     )
   end
 
@@ -73,7 +73,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Gifts wrapped in the North Pole!',
-      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
     )
   end
 
@@ -95,7 +95,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Custom wrapping for the holidays.',
-      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
     )
   end
 
@@ -104,7 +104,20 @@ module ServicesHelper
       id: 'pickup-and-delivery',
       name: 'Pickup & Delivery',
       header: '',
-      description: 'Full service pick-up and delivery.'
+      description: 'Full service pick-up and delivery.',
+      price: 30,
+      images: [
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25e1.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25d2.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282371/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_25c3.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2638.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_262d.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
+        '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
+      ],
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_south,h_2240,w_5119,y_0/v1511357060/Stock%20Photos/raphael-schaller-78095.jpg',
     )
   end
 end
