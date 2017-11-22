@@ -734,62 +734,41 @@ textarea:focus {
 
 #header-banner {
     background-color: $light-grey;
+    background-size: cover;
+    background-position: center;
+    background-color: $grey;
 }
 
 #header-banner.demo-1 {
     background: image-url("banner-bg-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.demo-2 {
     background: image-url("banner-bg-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.demo-3 {
     background: image-url("banner-bg-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.demo-4 {
     background: image-url("banner-bg-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.demo-5 {
     background: image-url("banner-bg-2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.cover-contact {
     background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.cover-about {
     background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 #header-banner.cover-services {
     background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $grey;
 }
 
 .banner-content {
