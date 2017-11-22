@@ -16,7 +16,9 @@ module ServicesHelper
       id: 'the-classic',
       name: 'The Classic',
       header: '',
-      description: 'Classic wrapping for the holidays.',
+      description: 'Classic wrapping for the holidays.
+        Your gifts are covered using our Classic papers, wrapped in either twine or two-toned cording, and include a blank paper gift tag. This service is priced per gift and by size.
+        Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.',
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
       price: 3,
       images: [
@@ -46,7 +48,9 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
       ],
       header: '',
-      description: 'Elevated wrapping for the holidays.',
+      description: 'Elevated wrapping for the holidays.
+        Your gifts are wrapped using our Classic papers and elevated with ribbon accents, adorned with greenery, and include a blank paper or metal rimmed gift tag. This service is priced per gift and by size.
+        Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx. ',
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
     )
   end
@@ -68,7 +72,8 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282425/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2643.jpg',
       ],
       header: '',
-      description: 'Gifts wrapped in the North Pole!',
+      description: 'Gifts wrapped in the North Pole!
+        Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid papers. and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santas packages with either twine/cording or ribbon, and are priced accordingly. This service is priced per gift and by size.',
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
     )
   end
@@ -90,7 +95,7 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282424/Product%20Images/Gift%20Tags/UNADJUSTEDNONRAW_thumb_2628.jpg',
       ],
       header: '',
-      description: 'Custom wrapping for the holidays.',
+      description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
     )
   end
@@ -100,7 +105,7 @@ module ServicesHelper
       id: 'pickup-and-delivery',
       name: 'Pickup & Delivery',
       header: '',
-      description: 'Full service pick-up and delivery.',
+      description: 'For added convenience, a full service pick-up and delivery service is available at an additional charge. We service most of the City of Toronto. Our service area includes east of Royal York Blvd, west of the DVP, and south of the 401. Please contact us directly to schedule a convenient pick-up and delivery window.',
       price: 30,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',

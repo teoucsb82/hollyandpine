@@ -27,27 +27,6 @@ section#shop
               p
                 i.lnr.lnr-tag
                 span Price: #{number_to_currency(@service.price)}
-            .info
-              p
-                i.lnr.lnr-heart
-                span
-                  | Category:
-                  a href="#"  Women's
-                  a href="#"  Jeans
-            .info
-              p
-                i.lnr.lnr-menu
-                span SKU: 1456842493
-            .info
-              p
-                i.lnr.lnr-star
-                span
-                  | Reviews:
-                  i.fa.fa-star
-                  i.fa.fa-star
-                  i.fa.fa-star
-                  i.fa.fa-star
-                  i.fa.fa-star-half-o
           .buy-product
             .options
               input.input-text.qty.text min="0" name="cart" size="4" step="1" title="Qty" type="number" value="1" 
@@ -74,8 +53,6 @@ section#shop
             a aria-expanded="true" data-toggle="tab" href="#description" role="tab"  DESCRIPTION
           li
             a aria-expanded="false" data-toggle="tab" href="#info" role="tab"  PRODUCT INFO
-          li
-            a aria-expanded="false" data-toggle="tab" href="#reviews" role="tab"  REVIEWS (2)
         .tab-content
           #description.tab-pane.animated.fadeIn.active role="tabpanel" 
             p Cras mattis odio non dolor elementum, at imperdiet nisi semper. Cras maximus placerat luctus. Praesent blandit sodales mi, sed viverra dolor venenatis sit amet. Nam non mauris odio. Vestibulum id urna eget nibh molestie tempus sit amet id lectus.
@@ -106,52 +83,6 @@ section#shop
                     tr
                       th More Info:
                       td Lorem ipsum.
-          #reviews.tab-pane.animated.fadeIn role="tabpanel" 
-            .reviews
-              .review-author.pull-left
-                = image_tag 'author1.jpg', alt: 'author1'
-              .review-content
-                h4.review-title.no-margin Amazing product!
-                .review-stars
-                  span.product-rating
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                p Duis luctus, neque ac ultricies bibendum, risus velit gravida velit, vestibulum laoreet orci magna vel ipsum.
-                cite - Johana Doe
-              .space-25 &nbsp;
-              .review-author.pull-left
-                = image_tag 'author2.jpg', alt: 'author2'
-              .review-content
-                h4.review-title.no-margin Very good product!
-                .review-stars
-                  span.product-rating
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star-o
-                p Morbi sodales ornare ex, at consectetur ipsum faucibus at. Ut facilisis orci metus, vitae hendrerit leo vulputate sit amet.
-                cite - Jane Doe
-              #add-review.space-top-30
-                h4 LEAVE A REVIEW
-                .row
-                  .col-sm-4.review-form
-                    input.form-control placeholder="*NAME" required="" type="text" /
-                  .col-sm-4.review-form
-                    input.form-control placeholder="*EMAIL" required="" type="email" /
-                  .col-sm-4.review-form
-                    select.form-control
-                      option 5 STARS
-                      option 4 STARS
-                      option 3 STARS
-                      option 2 STARS
-                      option 1 STAR
-                  .col-sm-12.review-form
-                    textarea.form-control placeholder="*REVIEW" required="" rows="7" 
-                    button.btn.btn-submit.btn-primary-filled.btn-rounded type="submit"  Submit Review
     #related-products
       h4.space-top-30.space-bottom-30.space-left RELATED PRODUCTS
       ul#grid.row.shop.list-unstyled
