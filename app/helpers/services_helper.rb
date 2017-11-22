@@ -17,6 +17,7 @@ module ServicesHelper
       name: 'The Classic',
       header: '',
       description: 'Classic wrapping for the holidays.',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
       # Katie --
       # Remove these comments when you're comfortable using this.
       # Basically, you can add as many image URLs as you want to this
@@ -30,7 +31,7 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282290/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25c7.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
-      ]
+      ],
     )
   end
 
@@ -50,6 +51,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Elevated wrapping for the holidays.',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
     )
   end
 
@@ -71,6 +73,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Gifts wrapped in the North Pole!',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
     )
   end
 
@@ -92,6 +95,7 @@ module ServicesHelper
       ],
       header: '',
       description: 'Custom wrapping for the holidays.',
+      background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
     )
   end
 
