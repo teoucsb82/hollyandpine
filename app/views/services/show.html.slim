@@ -22,7 +22,9 @@ section#shop
         .product-sidebar-details
           h4 = @service.name
           p = @service.description
-          p = @service.details
+          - if @service.details.present?
+            - @service.details.each do |line|
+              p = line
           .product-info
             .info
               p
