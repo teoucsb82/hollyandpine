@@ -5,5 +5,6 @@
 $ ->
   $('section[data-bg-img]').ready ->
     bgImage = $('section[data-bg-img]').data('bg-img')
+    return if bgImage == undefined
     $('#header-banner').css('background-image', 'url(' + bgImage + ')')
     return

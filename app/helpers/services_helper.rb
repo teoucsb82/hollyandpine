@@ -16,9 +16,9 @@ module ServicesHelper
       id: 'the-classic',
       name: 'The Classic',
       header: '',
-      description: 'Classic wrapping for the holidays.
-        Your gifts are covered using our Classic papers, wrapped in either twine or two-toned cording, and include a blank paper gift tag. This service is priced per gift and by size.
-        Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.',
+      description: "Classic wrapping for the holidays.",
+      details: "Your gifts are covered using our Classic papers, wrapped in either twine or two-toned cording, and include a blank paper gift tag. This service is priced per gift and by size.
+        Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.",
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
       price: 3,
       images: [
