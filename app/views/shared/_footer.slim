@@ -13,14 +13,9 @@ footer.light-footer
               .widget-title
                 h6 SHOP
               .link-widget
-                .info
-                  = link_to 'The Classic', '#x'            
-                .info
-                  = link_to 'The Elevated', '#x'            
-                .info
-                  = link_to 'The Mrs. Claus', '#x'            
-                .info
-                  = link_to 'The Custom', '#x'
+                - services.each do |service|
+                  .info
+                    = link_to service.name, service_path(service.id)
             .col-md-3.widget
               .widget-title
                 h6 SUPPORT
