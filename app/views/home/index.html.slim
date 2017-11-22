@@ -3,25 +3,25 @@ section#header-banner.demo-5
     .banner-border
       .banner-info
         h1 Holly & Pine
-        p Katie's Awesome Slogan Goes Here
+        p Gift Styling and Wrapping 
 section#collections
   .container
     h2.hide COLLECTIONS
     .row
       .col-sm-6.collection
         = link_to '#'
-          = image_tag 'f-collection1.jpg', alt: 'f-collection1'
+          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1400/v1511282495/Product%20Images/Group%20Photos/UNADJUSTEDNONRAW_thumb_2623.jpg'
       .col-sm-6.collections
         .row
           .col-sm-12.collection
             = link_to '#'
-              = image_tag 'f-collection2.jpg', alt: 'f-collection2'
+              = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_fill,h_500,w_1200/v1511294846/Product%20Images/Ribbons/website_ribbons.jpg'
           .col-sm-6.collection
             = link_to '#'
-              = image_tag 'f-collection3.jpg', alt: 'f-collection3'
+              = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,h_920,w_1200/v1511294250/Product%20Images/Group%20Photos/white_photo.jpg', alt: 'f-collection3'
           .col-sm-6.collection
             = link_to '#'
-              = image_tag 'f-collection4.jpg', alt: 'f-collection4'
+              = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,h_920,w_1200/v1511294406/Product%20Images/Group%20Photos/custom.jpg', alt: 'f-collection4'
 section#features
   .container
     .row
@@ -29,139 +29,44 @@ section#features
         .feature.block
           .feature-icon
             i.lnr.lnr-gift
-          h5 FREE SHIPPING
-          p Free worldwide shipping
+          h5 BEAUTIFUL WRAPPING
+          p Classic holiday wrapping
       .col-md-4.feature-center.bg-dark
         .feature.block
           .feature-icon
             i.lnr.lnr-clock
-          h5 FAST DELIVERY
-          p Fast worldwide delivery
+          h5 QUICK SERVICE
+          p Fast turnaround time 
       .col-md-4.feature-center.bg-light
         .feature.block
           .feature-icon
             i.lnr.lnr-exit
-          h5 MONEY BACK
-          p 30 Days money back
+          h5 WE GIVE
+          p We donate to Toys for Tots
 section#categories
   .container
     .row
       .col-sm-4.category
         a href="#x" 
         .category-item
-          = image_tag 'category1.jpg'
+          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_crop,w_1200/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg'
           .overlay
             .caption
-              h4 BEDROOM
+              h4 THE CLASSIC
       .col-sm-4.category
         a href="#x" 
         .category-item
-          = image_tag 'category2.jpg'
+          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511292980/Product%20Images/Elevated/IMG-6937.jpg'
           .overlay
             .caption
-              h4 LIVING
+              h4 THE ELEVATED
       .col-sm-4.category
         a href="#x" 
         .category-item
-          = image_tag 'category3.jpg'
+          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511293366/Product%20Images/Mrs.%20Claus/square_photo.jpg'
           .overlay
             .caption
-              h4 KITCHEN
-section#shop
-  .container
-    .page-header.no-margin-top.text-center
-      h3 LATEST PRODUCTS
-    ul.product-filter.list-inline.text-center
-      li
-        a.active data-group="all" href="#"  ALL
-      li
-        a data-group="living" href="#"  LIVING ROOM
-      li
-        a data-group="bedroom" href="#"  BEDROOM
-      li
-        a data-group="kitchen" href="#"  KITCHEN
-    ul#grid.row.shop.list-unstyled
-      li.col-xs-6.col-md-4.product.m-product data-groups='["bedroom"]'
-        .img-bg-color.primary
-          h5.product-price $249
-          a.product-link href="single-product2.html" 
-          = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-          .product-hover-tools
-            a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-              i.lnr.lnr-eye
-            a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-              i.lnr.lnr-cart
-          .product-details
-            h5.product-title PRODUCT TITLE
-            p.product-category CATEGORY
-      li.col-xs-6.col-md-4.product.m-product data-groups='["living", "kitchen"]'
-        .img-bg-color.primary
-          h5.product-price
-            del $399
-            | $199
-          a.product-link href="single-product2.html" 
-          = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-          .product-hover-tools
-            a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-              i.lnr.lnr-eye
-            a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-              i.lnr.lnr-cart
-          .product-details
-            h5.product-title PRODUCT TITLE
-            p.product-category CATEGORY
-          li.col-xs-6.col-md-4.product.m-product data-groups='["bedroom"]'
-            .img-bg-color.primary
-              h5.product-price $379
-              a.product-link href="single-product2.html" 
-              = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
-          li.col-xs-6.col-md-4.product.m-product data-groups='["kitchen"]'
-            .img-bg-color.primary
-              h5.product-price $269
-              a.product-link href="single-product2.html" 
-              = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
-          li.col-xs-6.col-md-4.product.m-product data-groups='["living"]'
-            .img-bg-color.primary
-              h5.product-price $339
-              a.product-link href="single-product2.html" 
-              = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
-          li.col-xs-6.col-md-4.product.m-product data-groups='["kitchen"]'
-            .img-bg-color.primary
-              h5.product-price $259
-              a.product-link href="single-product2.html" 
-              = image_tag 'f-m-product.jpg', alt: 'f-m-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product2.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
-          li.col-xs-6.col-md-4.shuffle_sizer
+              h4 THE MRS. CLAUS
 section#blog-small
   .container
     .page-header.no-margin.text-center
