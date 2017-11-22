@@ -22,3 +22,4 @@
 //= require validator.min
 //= require form-scripts
 //= require home
+//= require services
