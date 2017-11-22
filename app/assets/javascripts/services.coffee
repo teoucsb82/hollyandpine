@@ -5,5 +5,5 @@
 $ ->
   $('section[data-bg-img]').ready ->
     bgImage = $('section[data-bg-img]').data('bg-img')
-    $('#header-banner').css('background', 'url(' + bgImage + ')')
+    $('#header-banner').css('background-image', 'url(' + bgImage + ')')
     return
