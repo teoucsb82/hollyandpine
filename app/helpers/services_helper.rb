@@ -22,7 +22,6 @@ module ServicesHelper
         "Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
-      price: 3,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282291/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25f5.jpg',
@@ -32,6 +31,13 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
       ],
+      prices: {
+        xs: 1,
+        sm: 2,
+        md: 3,
+        lg: 4,
+        xl: 5
+      },
     )
   end
 
@@ -39,7 +45,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-elevated',
       name: 'The Elevated',
-      price: 4,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282348/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25d4.jpg',
@@ -56,6 +61,13 @@ module ServicesHelper
         "Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
+      prices: {
+        xs: 1,
+        sm: 2,
+        md: 3,
+        lg: 4,
+        xl: 5
+      },
     )
   end
 
@@ -63,7 +75,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
-      price: 5,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282518/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25a3.jpg',
@@ -81,6 +92,13 @@ module ServicesHelper
         'Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid papers. and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santas packages with either twine/cording or ribbon, and are priced accordingly. This service is priced per gift and by size.'
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
+      prices: {
+        xs: 1,
+        sm: 2,
+        md: 3,
+        lg: 4,
+        xl: 5
+      },
     )
   end
 
@@ -88,7 +106,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-custom',
       name: 'The Custom',
-      price: 6,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
@@ -104,6 +121,13 @@ module ServicesHelper
       description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       details: [],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
+      prices: {
+        xs: 1,
+        sm: 2,
+        md: 3,
+        lg: 4,
+        xl: 5
+      },
     )
   end
 
@@ -113,7 +137,6 @@ module ServicesHelper
       name: 'Pickup & Delivery',
       header: '',
       description: 'For added convenience, a full service pick-up and delivery service is available at an additional charge. We service most of the City of Toronto. Our service area includes east of Royal York Blvd, west of the DVP, and south of the 401. Please contact us directly to schedule a convenient pick-up and delivery window.',
-      price: 30,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
       ],
