@@ -47,23 +47,23 @@ section#categories
   .container
     .row
       .col-sm-4.category
-        a href="#x" 
-        .category-item
-          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_crop,w_1200/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg'
-          .overlay
-            .caption
-              h4 THE CLASSIC
+        = link_to service_path('the-classic') do
+          .category-item
+            = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_crop,w_1200/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg'
+            .overlay
+              .caption
+                h4 THE CLASSIC
       .col-sm-4.category
-        a href="#x" 
-        .category-item
-          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511292980/Product%20Images/Elevated/IMG-6937.jpg'
-          .overlay
-            .caption
-              h4 THE ELEVATED
+        = link_to service_path('the-elevated') do
+          .category-item
+            = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511292980/Product%20Images/Elevated/IMG-6937.jpg'
+            .overlay
+              .caption
+                h4 THE ELEVATED
       .col-sm-4.category
-        a href="#x" 
-        .category-item
-          = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511293366/Product%20Images/Mrs.%20Claus/square_photo.jpg'
-          .overlay
-            .caption
-              h4 THE MRS. CLAUS
+        = link_to service_path('the-mrs-claus') do
+          .category-item
+            = image_tag 'http://res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1200/v1511293366/Product%20Images/Mrs.%20Claus/square_photo.jpg'
+            .overlay
+              .caption
+                h4 THE MRS. CLAUS
