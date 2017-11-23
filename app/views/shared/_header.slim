@@ -39,5 +39,16 @@ header
               li.divider
               - services.each do |service|
                 li = link_to service.name, service_path(service.id)
+          li.dropdown
+            a.dropdown-toggle aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href="#" role='button'
+              span BLOG
+              span.dropdown-icon
+            ul.dropdown-menu.animated.zoomIn.fast
+              li = link_to 'BLOG FULLWIDTH', 'blog.html'
+              li = link_to 'BLOG MASONRY', 'blog-masonry.html'
+              li = link_to 'BLOG SIDEBAR', 'blog-sidebar.html'
+              li = link_to 'POST FULLWIDTH', 'single-post-full.html'
+              li = link_to 'POST SIDEBAR', 'single-post.html'
+          li = link_to 'FAQ', faq_index_path
           li class="#{'active' if current_page?(contact_index_path)}"
             = link_to 'CONTACT', contact_index_path
