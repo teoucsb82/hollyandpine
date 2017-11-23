@@ -32,11 +32,11 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
       ],
       prices: {
-        xs: 1,
-        sm: 2,
-        md: 3,
-        lg: 4,
-        xl: 5
+        xs: 3,
+        sm: 3.5,
+        md: 4,
+        lg: 4.5,
+        xl: 5,
       },
     )
   end
@@ -62,11 +62,11 @@ module ServicesHelper
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
       prices: {
-        xs: 1,
-        sm: 2,
-        md: 3,
-        lg: 4,
-        xl: 5
+        xs: 6.5,
+        sm: 7,
+        md: 8,
+        lg: 9,
+        xl: 10,
       },
     )
   end
@@ -93,11 +93,11 @@ module ServicesHelper
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
       prices: {
-        xs: 1,
-        sm: 2,
-        md: 3,
-        lg: 4,
-        xl: 5
+        xs: 3,
+        sm: 3.5,
+        md: 4,
+        lg: 4.5,
+        xl: 5,
       },
     )
   end
@@ -119,14 +119,16 @@ module ServicesHelper
       ],
       header: '',
       description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
-      details: [],
+      details: [
+        'Prices listed below are estimated and will be finalized upon consultation.'
+       ], 
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
       prices: {
-        xs: 1,
-        sm: 2,
-        md: 3,
-        lg: 4,
-        xl: 5
+        xs: 6.5,
+        sm: 7,
+        md: 8,
+        lg: 9,
+        xl: 10,
       },
     )
   end
