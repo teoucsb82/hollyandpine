@@ -18,8 +18,9 @@ module ServicesHelper
       header: '',
       description: "Classic wrapping for the holidays.",
       details: [
-        "Your gifts are covered using our Classic papers, wrapped in either twine or two-toned cording, and include a blank paper gift tag. This service is priced per gift and by size.",
+        "Your gifts are covered using our Classic papers, wrapped in either twine or two-toned cording, and include a blank paper gift tag.",
         "Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.",
+        "This service is priced per gift and by size.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
       images: [
@@ -57,8 +58,9 @@ module ServicesHelper
       header: '',
       description: 'Elevated wrapping for the holidays.',
       details: [
-        "Your gifts are wrapped using our Classic papers and elevated with ribbon accents, adorned with greenery, and include a blank paper or metal rimmed gift tag. This service is priced per gift and by size.",
+        "Your gifts are wrapped using our Classic papers and elevated with ribbon accents, adorned with greenery, and include a blank paper or metal rimmed gift tag.",
         "Our Classic paper colour selection includes Snow, Chestnut, and Black Onyx.",
+        "This service is priced per gift and by size.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
       prices: {
@@ -89,7 +91,8 @@ module ServicesHelper
       header: '',
       description: 'Gifts wrapped in the North Pole!',
       details: [
-        'Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid papers. and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santas packages with either twine/cording or ribbon, and are priced accordingly. This service is priced per gift and by size.'
+        'Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid papers. and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santas packages with either twine/cording or ribbon, and are priced accordingly.',
+        'This service is priced per gift and by size.',
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
       prices: {
@@ -120,8 +123,8 @@ module ServicesHelper
       header: '',
       description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       details: [
-        'Prices listed below are estimated and will be finalized upon consultation.'
-       ], 
+        'While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
+      ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
       prices: {
         xs: 6.5,
