@@ -1,0 +1,16 @@
+section#header-banner.cover-faq
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 FAQ
+        p Frequently Asked Questions
+section#about
+  .container
+    h2.hide Frequently Asked Questions
+    - @faqs.each do |faq|
+      .panel-group.tabbed
+        .panel
+          .panel-heading
+            a.panel-title data-toggle="collapse" href="##{faq.id}" = faq.question
+          .panel-collapse.collapse id="#{faq.id}"
+            .panel-body.text-gray = faq.answer
