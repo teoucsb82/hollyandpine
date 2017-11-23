@@ -25,11 +25,6 @@ section#shop
           - if @service.details.present?
             - @service.details.each do |line|
               p = line
-          .product-info
-            .info
-              p
-                i.lnr.lnr-tag
-                span Price: #{number_to_currency(@service.price)}
           .buy-product
             .options
               input.input-text.qty.text min="0" name="cart" size="4" step="1" title="Qty" type="number" value="1" 
@@ -59,11 +54,33 @@ section#shop
         .tab-content
           #sizing.tab-pane.animated.fadeIn.active role="tabpanel" 
             p All prices are set per gift and by size. Our sizing categories are guidelines and refer to package sizes "up-to" the lengths outlined. All dimensions are listed in inches and in the following format: length x width x height.
-            p Extra small - 6" x 6" x 6"
-            p Small - 8" x 8" x 6"
-            p Medium - 12" x 12" x 6"
-            p Large - 16" x 16" x 6"
-            p Extra large - 22" x 22" x 6"
+            table.table.table-condensed.table-striped.small
+              thead
+                tr
+                  th Size
+                  th Dimensions
+                  th Price
+              tbody
+                tr
+                  td Extra small
+                  td 6" x 6" x 6"
+                  td = number_to_currency(@service.prices[:xs])
+                tr
+                  td Small
+                  td 8" x 8" x 6"
+                  td = number_to_currency(@service.prices[:sm])
+                tr
+                  td Medium
+                  td 12" x 12" x 6"
+                  td = number_to_currency(@service.prices[:md])
+                tr
+                  td Large
+                  td 16" x 16" x 6"
+                  td = number_to_currency(@service.prices[:lg])
+                tr
+                  td Extra large
+                  td 22" x 22" x 6"
+                  td = number_to_currency(@service.prices[:xl])
           #info.tab-pane.animated.fadeIn role="tabpanel" 
             .row
               .col-sm-6
