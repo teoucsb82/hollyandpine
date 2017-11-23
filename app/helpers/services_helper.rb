@@ -23,7 +23,6 @@ module ServicesHelper
         "This service is priced per gift and by size.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356018/Stock%20Photos/freestocks-org-171595.jpg',
-      price: 3,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282291/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_25f5.jpg',
@@ -33,6 +32,13 @@ module ServicesHelper
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282292/Product%20Images/Classic/UNADJUSTEDNONRAW_thumb_259c.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282423/Product%20Images/Gift%20Tags/5PFTjgciRsKuJWB89FrymA_thumb_2621.jpg',
       ],
+      prices: {
+        xs: 3,
+        sm: 3.5,
+        md: 4,
+        lg: 4.5,
+        xl: 5,
+      },
     )
   end
 
@@ -40,7 +46,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-elevated',
       name: 'The Elevated',
-      price: 4,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282350/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_2606.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282348/Product%20Images/Elevated/UNADJUSTEDNONRAW_thumb_25d4.jpg',
@@ -58,6 +63,13 @@ module ServicesHelper
         "This service is priced per gift and by size.",
         ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356027/Stock%20Photos/emanuel-hahn-223442.jpg',
+      prices: {
+        xs: 6.5,
+        sm: 7,
+        md: 8,
+        lg: 9,
+        xl: 10,
+      },
     )
   end
 
@@ -65,7 +77,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-mrs-claus',
       name: 'The Mrs. Claus',
-      price: 5,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282520/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_258e.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282518/Product%20Images/Mrs.%20Claus/UNADJUSTEDNONRAW_thumb_25a3.jpg',
@@ -84,6 +95,13 @@ module ServicesHelper
         'This service is priced per gift and by size.',
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
+      prices: {
+        xs: 3,
+        sm: 3.5,
+        md: 4,
+        lg: 4.5,
+        xl: 5,
+      },
     )
   end
 
@@ -91,7 +109,6 @@ module ServicesHelper
     OpenStruct.new(
       id: 'the-custom',
       name: 'The Custom',
-      price: 6,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_2626.jpg',
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
@@ -105,9 +122,17 @@ module ServicesHelper
       ],
       header: '',
       description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
-      details: ['While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
+      details: [
+        'While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
+      prices: {
+        xs: 6.5,
+        sm: 7,
+        md: 8,
+        lg: 9,
+        xl: 10,
+      },
     )
   end
 
@@ -116,13 +141,21 @@ module ServicesHelper
       id: 'pickup-and-delivery',
       name: 'Pickup & Delivery',
       header: '',
-      description: 'For added convenience, a full service pick-up and delivery service is available at an additional charge. We service most of the City of Toronto. Our service area includes east of Royal York Blvd, west of the DVP, and south of the 401. Please contact us directly to schedule a convenient pick-up and delivery window.',
-      price: 30,
       images: [
         '//res.cloudinary.com/hollyandpine/image/upload/v1511282372/Product%20Images/Custom/UNADJUSTEDNONRAW_thumb_260a.jpg',
       ],
-      details: [],
+      details: [
+        'For added convenience, a full service pick-up and delivery service is available at an additional charge of $30. We service most of the City of Toronto. Our service area includes east of Royal York Blvd, west of the DVP, and south of the 401.', 
+        'Please contact us directly to schedule a convenient pick-up and delivery window.',
+      ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_south,h_2240,w_5119,y_0/v1511357060/Stock%20Photos/raphael-schaller-78095.jpg',
+      prices: {
+        xs: 0,
+        sm: 0,
+        md: 0,
+        lg: 0,
+        xl: 0,
+      },
     )
   end
 end

@@ -25,11 +25,6 @@ section#shop
           - if @service.details.present?
             - @service.details.each do |line|
               p = line
-          .product-info
-            .info
-              p
-                i.lnr.lnr-tag
-                span Price: #{number_to_currency(@service.price)}
           .buy-product
             .options
               input.input-text.qty.text min="0" name="cart" size="4" step="1" title="Qty" type="number" value="1" 
@@ -53,53 +48,34 @@ section#shop
               span Buy Now
         ul.nav.nav-tabs role="tablist" 
           li.active
-            a aria-expanded="true" data-toggle="tab" href="#description" role="tab"  DESCRIPTION
-          li
-            a aria-expanded="false" data-toggle="tab" href="#info" role="tab"  PRODUCT INFO
+            a aria-expanded="true" data-toggle="tab" href="#sizing" role="tab"  SIZING & PRICING
         .tab-content
-          #description.tab-pane.animated.fadeIn.active role="tabpanel" 
-            p Cras mattis odio non dolor elementum, at imperdiet nisi semper. Cras maximus placerat luctus. Praesent blandit sodales mi, sed viverra dolor venenatis sit amet. Nam non mauris odio. Vestibulum id urna eget nibh molestie tempus sit amet id lectus.
-            p Aenean ut suscipit purus, ut facilisis erat. Integer at nulla sit amet augue consequat pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
-          #info.tab-pane.animated.fadeIn role="tabpanel" 
-            .row
-              .col-sm-6
-                table
-                  tbody
-                    tr
-                      th Sizes:
-                      td Small, Medium, Large
-                    tr
-                      th Colors:
-                      td Beige, Black, Blue
-                    tr
-                      th Fabric:
-                      td 100% Cotton
-              .col-sm-6
-                table
-                  tbody
-                    tr
-                      th Weight:
-                      td 0.5 Kg
-                    tr
-                      th Made In:
-                      td USA
-                    tr
-                      th More Info:
-                      td Lorem ipsum.
-    #related-products
-      h4.space-top-30.space-bottom-30.space-left RELATED PRODUCTS
-      ul#grid.row.shop.list-unstyled
-        - 3.times do
-          li.col-xs-6.col-md-4.product.m-product data-groups="['mens']" 
-            .img-bg-color.primary
-              h5.product-price $49
-              a.product-link href="single-product.html" 
-              = image_tag 'm-product.jpg', alt: 'm-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
+          #sizing.tab-pane.animated.fadeIn.active role="tabpanel" 
+            p All prices are set per gift and by size. Our sizing categories are guidelines and refer to package sizes "up-to" the lengths outlined. All dimensions are listed in inches and in the following format: length x width x height.
+            table.table.table-condensed.table-striped.small
+              thead
+                tr
+                  th Size
+                  th Dimensions
+                  th Price
+              tbody
+                tr
+                  td Extra small
+                  td 6" x 6" x 6"
+                  td = number_to_currency(@service.prices[:xs])
+                tr
+                  td Small
+                  td 8" x 8" x 6"
+                  td = number_to_currency(@service.prices[:sm])
+                tr
+                  td Medium
+                  td 12" x 12" x 6"
+                  td = number_to_currency(@service.prices[:md])
+                tr
+                  td Large
+                  td 16" x 16" x 6"
+                  td = number_to_currency(@service.prices[:lg])
+                tr
+                  td Extra large
+                  td 22" x 22" x 6"
+                  td = number_to_currency(@service.prices[:xl])
