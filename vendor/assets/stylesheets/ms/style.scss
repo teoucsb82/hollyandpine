@@ -760,15 +760,20 @@ textarea:focus {
 }
 
 #header-banner.cover-contact {
-    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg") no-repeat;
+    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg") no-repeat;
 }
 
 #header-banner.cover-about {
-    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
+    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
+}
+
+#header-banner.cover-faq {
+    // KATIE -- REPLACE THE IMAGE AND REMOVE THIS COMMENT
+    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
 }
 
 #header-banner.cover-services {
-    background: url("https://res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg") no-repeat;
+    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg") no-repeat;
 }
 
 .banner-content {
