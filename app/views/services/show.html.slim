@@ -48,9 +48,7 @@ section#shop
               span Buy Now
         ul.nav.nav-tabs role="tablist" 
           li.active
-            a aria-expanded="true" data-toggle="tab" href="#sizing" role="tab"  SIZING
-          li
-            a aria-expanded="false" data-toggle="tab" href="#info" role="tab"  PRICING
+            a aria-expanded="true" data-toggle="tab" href="#sizing" role="tab"  SIZING & PRICING
         .tab-content
           #sizing.tab-pane.animated.fadeIn.active role="tabpanel" 
             p All prices are set per gift and by size. Our sizing categories are guidelines and refer to package sizes "up-to" the lengths outlined. All dimensions are listed in inches and in the following format: length x width x height.
@@ -81,29 +79,3 @@ section#shop
                   td Extra large
                   td 22" x 22" x 6"
                   td = number_to_currency(@service.prices[:xl])
-          #info.tab-pane.animated.fadeIn role="tabpanel" 
-            .row
-              .col-sm-6
-                table
-                  tbody
-                    tr
-                      th Sizes:
-                      td Small, Medium, Large
-                    tr
-                      th Colors:
-                      td Beige, Black, Blue
-                    tr
-                      th Fabric:
-                      td 100% Cotton
-              .col-sm-6
-                table
-                  tbody
-                    tr
-                      th Weight:
-                      td 0.5 Kg
-                    tr
-                      th Made In:
-                      td USA
-                    tr
-                      th More Info:
-                      td Lorem ipsum.
