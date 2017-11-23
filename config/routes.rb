@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :about, only: [:index]
   resources :contact, only: [:index]
+  resources :faq, only: [:index]
   resources :home, only: [:index]
   resources :services, only: [:index, :show]
   resources :users, path: 'my-account', only: [:update] do
