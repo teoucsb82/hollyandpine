@@ -107,20 +107,3 @@ section#shop
                     tr
                       th More Info:
                       td Lorem ipsum.
-    #related-products
-      h4.space-top-30.space-bottom-30.space-left RELATED PRODUCTS
-      ul#grid.row.shop.list-unstyled
-        - 3.times do
-          li.col-xs-6.col-md-4.product.m-product data-groups="['mens']" 
-            .img-bg-color.primary
-              h5.product-price $49
-              a.product-link href="single-product.html" 
-              = image_tag 'm-product.jpg', alt: 'm-product'
-              .product-hover-tools
-                a.view-btn data-toggle="tooltip" href="single-product.html" title=("View Product") 
-                  i.lnr.lnr-eye
-                a.cart-btn data-toggle="tooltip" href="shopping-cart.html" title=("Add to Cart") 
-                  i.lnr.lnr-cart
-              .product-details
-                h5.product-title PRODUCT TITLE
-                p.product-category CATEGORY
