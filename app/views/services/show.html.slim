@@ -25,11 +25,6 @@ section#shop
           - if @service.details.present?
             - @service.details.each do |line|
               p = line
-          .product-info
-            .info
-              p
-                i.lnr.lnr-tag
-                span Price: #{number_to_currency(@service.price)}
           .buy-product
             .options
               input.input-text.qty.text min="0" name="cart" size="4" step="1" title="Qty" type="number" value="1" 
@@ -53,13 +48,39 @@ section#shop
               span Buy Now
         ul.nav.nav-tabs role="tablist" 
           li.active
-            a aria-expanded="true" data-toggle="tab" href="#description" role="tab"  DESCRIPTION
+            a aria-expanded="true" data-toggle="tab" href="#sizing" role="tab"  SIZING
           li
-            a aria-expanded="false" data-toggle="tab" href="#info" role="tab"  PRODUCT INFO
+            a aria-expanded="false" data-toggle="tab" href="#info" role="tab"  PRICING
         .tab-content
-          #description.tab-pane.animated.fadeIn.active role="tabpanel" 
-            p Cras mattis odio non dolor elementum, at imperdiet nisi semper. Cras maximus placerat luctus. Praesent blandit sodales mi, sed viverra dolor venenatis sit amet. Nam non mauris odio. Vestibulum id urna eget nibh molestie tempus sit amet id lectus.
-            p Aenean ut suscipit purus, ut facilisis erat. Integer at nulla sit amet augue consequat pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
+          #sizing.tab-pane.animated.fadeIn.active role="tabpanel" 
+            p All prices are set per gift and by size. Our sizing categories are guidelines and refer to package sizes "up-to" the lengths outlined. All dimensions are listed in inches and in the following format: length x width x height.
+            table.table.table-condensed.table-striped.small
+              thead
+                tr
+                  th Size
+                  th Dimensions
+                  th Price
+              tbody
+                tr
+                  td Extra small
+                  td 6" x 6" x 6"
+                  td = number_to_currency(@service.prices[:xs])
+                tr
+                  td Small
+                  td 8" x 8" x 6"
+                  td = number_to_currency(@service.prices[:sm])
+                tr
+                  td Medium
+                  td 12" x 12" x 6"
+                  td = number_to_currency(@service.prices[:md])
+                tr
+                  td Large
+                  td 16" x 16" x 6"
+                  td = number_to_currency(@service.prices[:lg])
+                tr
+                  td Extra large
+                  td 22" x 22" x 6"
+                  td = number_to_currency(@service.prices[:xl])
           #info.tab-pane.animated.fadeIn role="tabpanel" 
             .row
               .col-sm-6
