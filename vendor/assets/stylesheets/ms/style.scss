@@ -737,6 +737,7 @@ textarea:focus {
     background-size: cover;
     background-position: center;
     background-color: $grey;
+    background-repeat: no-repeat;
 }
 
 #header-banner.demo-1 {
@@ -760,20 +761,20 @@ textarea:focus {
 }
 
 #header-banner.cover-contact {
-    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg") no-repeat;
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg");
 }
 
 #header-banner.cover-about {
-    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg");
 }
 
 #header-banner.cover-faq {
     // KATIE -- REPLACE THE IMAGE AND REMOVE THIS COMMENT
-    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg") no-repeat;
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg");
 }
 
 #header-banner.cover-services {
-    background: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg") no-repeat;
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/services.jpg");
 }
 
 .banner-content {
