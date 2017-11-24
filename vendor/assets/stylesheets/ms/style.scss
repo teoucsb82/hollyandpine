@@ -760,17 +760,20 @@ textarea:focus {
     background: image-url("banner-bg-2.jpg") no-repeat;
 }
 
+#header-banner.cover-home {
+    background: url("//res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1600/v1511467216/Product%20Images/Group%20Photos/69CE9FE4-F0EA-468B-8195-8336BCA5C11E.jpg") no-repeat;
+}
+
 #header-banner.cover-contact {
     background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511160621/contact.jpg");
 }
 
 #header-banner.cover-about {
-    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg");
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/v1511461035/Stock%20Photos/atle-mo-209964.jpg");
 }
 
 #header-banner.cover-faq {
-    // KATIE -- REPLACE THE IMAGE AND REMOVE THIS COMMENT
-    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/q_80/v1511163531/about.jpg");
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_north,h_2024,w_4896,x_0,y_154/v1511461043/Stock%20Photos/annie-spratt-7927.jpg");
 }
 
 #header-banner.cover-services {
