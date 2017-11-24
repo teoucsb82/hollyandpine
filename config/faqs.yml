@@ -1,10 +1,25 @@
 faqs:
   question_01:
-    question: What is a question?
-    answer: MY BIIIIICK
+    question: How much does it cost to wrap a gift? 
+    answer:   Our pricing for each of our wrapping styles is outlined on our services pages. We price packages according to size and materials used. Our minimum order for wrapping services is $30.
   question_02:
-    question: What is a question2222?
-    answer: MY BIIIIICK2222
+    question: How long will it take you to complete my order?
+    answer: Our typical turnaround time is a minimum of two business days for up to 10 items; for every additional 10 items, add one day.
   question_03:
-    question: What is a question333?
-    answer: MY BIIIIICK333
+    question: Do you provide custom wrapping services? 
+    answer: Yes, we provide custom wrapping services. Whether you’re looking to use a specific color theme, need gift styling for an event, or are in need of corporate gift wrapping, we can help. If you’re interested in custom work, please contact us for a consultation and quote.
+  question_04:
+    question: Where will you wrap my gifts?
+    answer: Our studios are conveniently located at 832 Bay Street in Toronto, Ontario. We perform our wrapping in house. Please contact us to set up a time for drop off or to inquire about our pick-up and delivery service. 
+  question_05:
+    question: Do you provide pick-up and delivery services? 
+    answer: Yes, we provide a full service pick-up and delivery service at an additional charge of $30. We service east of Royal York Blvd, west of the DVP, and south of the 401. Please contact us to set up a pick-up and delivery window. 
+  question_06:
+    question: Do you offer on-site wrapping services? 
+    answer: While we prefer to wrap gifts in our own studios, we will consider wrapping at your on-site location for an additional charge. 
+  question_07:
+    question: I’ve already purchased wrapping materials. Will you wrap my gifts using pre-purchased materials?
+    answer: While we prefer our own materials, we are happy to work with your pre-purchased materials. Please keep in mind that we cannot guarantee the same level of design and craftsmanship — if the materials are of lesser-quality, it may mean lesser-quality results.
+  question_08:
+    question: Do you give back to your community?
+    answer: Yes! During this season of giving, we are donating 50¢ for each wrapped package to Toys For Tots.
