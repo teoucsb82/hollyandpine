@@ -1,10 +1,8 @@
 header
   nav.navbar.navbar-default.navbar-fixed-top
-    .top-menu.top-menu-inverse
+    /*.top-menu.top-menu-inverse
       .container
         p
-          span.space-left FREE SHIPPING ON ORDERS OVER 
-          span.text-primary: strong $100
           span.right
             - if user_signed_in?
               = link_to 'My Account', users_path
@@ -14,7 +12,7 @@ header
                 span.cart-badge 2
             - else
               = link_to 'Sign Up', new_user_registration_path
-              = link_to 'Log In', new_user_session_path
+              = link_to 'Log In', new_user_session_path*/
     .container
       .navbar-header
         button.navbar-toggle.collapsed data-target='.navbar-collapse' data-toggle='collapse' type='button'
