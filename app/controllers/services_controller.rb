@@ -1,6 +1,5 @@
 class ServicesController < ApplicationController
-  include ServicesHelper
-  
+  include ServicesHelper  
   def index
   end
 
