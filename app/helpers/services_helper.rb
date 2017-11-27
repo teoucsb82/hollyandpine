@@ -91,7 +91,7 @@ module ServicesHelper
       header: '',
       description: 'Gifts wrapped in the North Pole!',
       details: [
-        'Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid papers. and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santas packages with either twine/cording or ribbon, and are priced accordingly.',
+        "Even Santa needs help wrapping all those gifts. Your gifts are wrapped by Mrs. Claus herself in either our Canadian Nutcracker or Piper Plaid wrapping and include a paper gift tag. Our Mrs. Claus service comes with the option to adorn Santa's packages with either twine/cording or ribbon, and are priced accordingly.",
         'This service is priced per gift and by size.',
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/c_crop,g_auto:face,h_2305,w_5694,y_0/v1511356019/Stock%20Photos/drew-coffman-175709.jpg',
@@ -123,7 +123,6 @@ module ServicesHelper
       header: '',
       description: 'Custom wrapping for the holidays. While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       details: [
-        'While we love our own materials and designs, we would be happy to help with your own custom creations on a small or large scale!',
       ],
       background_image: '//res.cloudinary.com/hollyandpine/image/upload/v1511356008/Stock%20Photos/annie-spratt-176628.jpg',
       prices: {
