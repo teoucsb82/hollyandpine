@@ -1,0 +1,51 @@
+section#header-banner.cover-order
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 Contact
+        p Get in touch with us
+#page-content.container
+  .row
+    .col-sm.12.contact.info.text-center.space-bottom
+      p Please contact us directly via phone or email to inquire about our services.
+  .row
+    .col-sm-6.col-sm-offset-3
+      #contact-form
+        = form_for(@order, id: 'contactForm', data: { toggle: 'validator'}) do |f|
+          .form-group
+            input#name.form-control placeholder=("FULL NAME") required="" type="text" /
+            .help-block.with-errors
+          .form-group
+            input#email.form-control placeholder="EMAIL" required="" type="email" /
+            .help-block.with-errors
+          .form-group
+            input#phone.form-control placeholder="PHONE" type="tel" /
+            .help-block.with-errors
+          .form-group
+            textarea#message.form-control placeholder="MESSAGE"  rows="5" 
+            .help-block.with-errors
+          button#form-submit.btn.btn-md.btn-primary-filled.btn-form-submit type="submit"  SUBMIT FORM
+          #msgSubmit.h3.text-center.hidden
+          .clearfix
+  hr
+  .row
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-map-marker
+      h5 ADDRESS
+      p 832 Bay Street
+      p Toronto, ON M5S 1Z6
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-smartphone
+      h5 PHONE
+      p
+        | Contact:
+        a href="tel:+6504529229"  +1 650 452 9229
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-envelope
+      h5 EMAIL
+      p
+        | Contact:
+        = mail_to 'contact@hollyandpine.ca', 'contact@hollyandpine.ca'

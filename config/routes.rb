@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :contact, only: [:index]
   resources :faq, only: [:index]
   resources :home, only: [:index]
+  resources :orders, only: [:new, :create, :show]
   resources :services, only: [:index, :show]
   resources :terms_and_conditions, path: 'terms-and-conditions', only: [:index]
   resources :users, path: 'my-account', only: [:update] do

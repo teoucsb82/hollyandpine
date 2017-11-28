@@ -37,7 +37,7 @@ section#shop
                     option Large
                     option Extra Large
             .space-25 &nbsp;
-            a.btn.btn-primary-filled.btn-rounded href="shopping-cart.html" 
+            = link_to new_order_path, class: 'btn btn-primary-filled btn-rounded' do
               i.lnr.lnr-cart
               span Add to Cart
         ul.nav.nav-tabs role="tablist" 
