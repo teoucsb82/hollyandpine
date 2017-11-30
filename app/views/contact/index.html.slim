@@ -1,9 +1,9 @@
 section#header-banner.cover-contact
-    .banner-content.single-page.text-center
-      .banner-border
-        .banner-info
-          h1 Contact
-          p Get in touch with us
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 Contact
+        p Get in touch with us
 #page-content.container
   .row
     .col-sm.12.contact.info.text-center.space-bottom
@@ -30,7 +30,7 @@ section#header-banner.cover-contact
       h5 EMAIL
       p
         | Contact:
-        a href="support:contact@hollyandpine.ca"  contact@hollyandpine.ca
+        = mail_to 'contact@hollyandpine.ca', 'contact@hollyandpine.ca'
   .row.contact-area
     .col-sm-6.map
       #map2

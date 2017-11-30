@@ -1,0 +1,50 @@
+section#header-banner.cover-order
+  .banner-content.single-page.text-center
+    .banner-border
+      .banner-info
+        h1 Place An Order
+#page-content.container
+  .row
+    .col-sm.12.contact.info.text-center.space-bottom
+      p Thank you for your interest in Holly & Pine!
+      p We're currently taking gift styling and wrapping orders manually.
+      p Please fill out the form below and a member of our team will contact you within one business day to discuss your needs.
+  .row
+    .col-sm-6.col-sm-offset-3
+      #contact-form
+        = form_for(@order, id: 'contactForm', data: { toggle: 'validator'}) do |f|
+          .form-group
+            = f.text_field :name, placeholder: "FULL NAME", required: true, class: 'form-control'
+            .help-block.with-errors
+          .form-group
+            = f.email_field :email, placeholder: "EMAIL", required: true, class: 'form-control'
+            .help-block.with-errors
+          .form-group
+            = f.telephone_field :phone, placeholder: "PHONE", class: 'form-control'
+            .help-block.with-errors
+          .form-group
+            = f.text_area :message, placeholder: 'MESSAGE', class: 'form-control', rows: '5'
+            .help-block.with-errors
+          = f.submit 'SUMBIT', id: 'form-submit', class: 'btn btn-md btn-primary-filled btn-form-submit'
+  hr
+  .row
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-map-marker
+      h5 ADDRESS
+      p 832 Bay Street
+      p Toronto, ON M5S 1Z6
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-smartphone
+      h5 PHONE
+      p
+        | Contact:
+        a href="tel:+6504529229"  +1 650 452 9229
+    .col-sm-4.contact-info.text-center.space-bottom
+      .contact-icon
+        i.lnr.lnr-envelope
+      h5 EMAIL
+      p
+        | Contact:
+        = mail_to 'contact@hollyandpine.ca', 'contact@hollyandpine.ca'
