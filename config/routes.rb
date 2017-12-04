@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
   devise_for :users
+  namespace :admin do
+    resources :orders, only: [:show, :index, :destroy]
+  end
   resources :about, only: [:index]
   resources :contact, only: [:index]
   resources :faq, only: [:index]

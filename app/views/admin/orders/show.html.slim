@@ -1,0 +1,12 @@
+section
+#page-content.container
+  h1 Order ##{@order.id}
+  .panel.panel-success
+    .panel-heading
+      h3.panel-title From: #{@order.name} / Email: #{@order.email}
+    .panel-body
+      p
+      |
+      strong Message: 
+      | #{@order.message}
+  = link_to "<< All Orders", admin_orders_path, class: 'btn btn-primary btn-lg'
