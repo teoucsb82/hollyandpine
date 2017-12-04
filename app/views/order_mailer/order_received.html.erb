@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>
+      Order #<%= @order.id %> Received
+    </h1>
+    <h3>
+      Name: <%= @order.name %>name
+    </h3>
+    <h3>
+      Email: <%= mail_to @order.email, @order.email %>
+    </h3>
+    <% if @order.phone %>
+      <h3>Phone <%= @order.phone %></h3>
+    <% end %>
+    <strong>Message:</strong>
+    <span>
+      <%= @order.message %>
+    </span>
+    <p><%= link_to "View online", admin_order_url(@order) %>
+  </body>
+</html>

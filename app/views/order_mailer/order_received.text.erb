@@ -1,0 +1,7 @@
+Order received from <%= @order.name %>
+Email <%= @order.email %>
+<% if @order.phone %>
+  Phone <%= @order.phone %>
+<% end %>
+-------
+<%= @order.message %>
