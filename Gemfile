@@ -16,7 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :production do
   gem 'heroku-deflater'
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
 end
 

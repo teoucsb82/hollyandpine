@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
   def send_email
     begin
       OrderMailer.order_received(@order).deliver
-    rescue NET::SMTPAuthenticationError => e
+    rescue StandardError => e
       true
     end
   end
