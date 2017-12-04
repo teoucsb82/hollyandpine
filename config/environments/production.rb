@@ -92,6 +92,6 @@ Rails.application.configure do
   }
 
   config.action_mailer.default_url_options = { 
-    host: 'www.hollyandpine.ca' 
+    host: 'www.hollyandpine.ca'
   }
 end
