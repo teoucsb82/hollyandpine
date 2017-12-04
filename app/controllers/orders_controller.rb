@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     
     if @order.save
+      OrderMailer.order_received(@order).deliver
       redirect_to order_path(@order)
     else
       redirect_to new_order_path
