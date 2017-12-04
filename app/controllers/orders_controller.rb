@@ -7,7 +7,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     
     if @order.save
-      OrderMailer.order_received(@order).deliver
+      send_email
       redirect_to order_path(@order)
     else
       redirect_to new_order_path
@@ -22,5 +22,13 @@ class OrdersController < ApplicationController
 
   def order_params
     params.require(:order).permit(:name, :email, :phone, :contact_method, :message)
+  end
+
+  def send_email
+    begin
+      OrderMailer.order_received(@order).deliver
+    rescue NET::SMTPAuthenticationError => e
+      true
+    end
   end
 end
