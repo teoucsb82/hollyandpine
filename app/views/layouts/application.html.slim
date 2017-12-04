@@ -3,7 +3,9 @@ html
     = render 'shared/meta'
     = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag    '//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css', media: 'all'
     = javascript_include_tag 'application'
+    = javascript_include_tag '//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js'
     = csrf_meta_tags
     = display_meta_tags site: 'Holly and Pine'
     = render 'shared/ga'
