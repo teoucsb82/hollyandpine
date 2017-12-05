@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171205040048) do
+ActiveRecord::Schema.define(version: 20171205043403) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "country"
@@ -44,9 +44,14 @@ ActiveRecord::Schema.define(version: 20171205040048) do
     t.string   "cover_image"
     t.string   "main_image"
     t.text     "body"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "slug"
+    t.string   "meta_keywords"
+    t.string   "meta_description"
   end
+
+  add_index "landing_pages", ["slug"], name: "index_landing_pages_on_slug", unique: true
 
   create_table "orders", force: :cascade do |t|
     t.string   "name"
