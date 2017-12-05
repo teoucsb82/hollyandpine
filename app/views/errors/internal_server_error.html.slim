@@ -1,0 +1,20 @@
+header
+  #header-banner.cover-errors
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 500
+          p Internal Server Error!
+#page-content.container
+  .pnf-content.text-center
+    h2 WHOOOPS... WE'RE SO SORRY!
+    p.lead Something went wrong on our end!
+    p
+      = link_to root_url, class: 'btn btn-lg btn-primary-filled btn-rounded' do
+        i.fa.fa-long-arrow-left
+        span Back to Home Page
+    h6 OR
+    p
+      = link_to services_path, class: 'btn btn-lg btn-default-filled btn-rounded' do
+        i.fa.fa-shopping-cart
+        span View Services
