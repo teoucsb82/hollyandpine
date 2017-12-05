@@ -784,6 +784,13 @@ textarea:focus {
     background-image: url("//res.cloudinary.com/hollyandpine/image/upload/v1511282491/Product%20Images/Group%20Photos/UNADJUSTEDNONRAW_thumb_25b1.jpg");
 }
 
+#header-banner.cover-errors {
+    // Katie...Change this image to something else,
+    // Then remove these commented lines
+    // Git commit and push back to this branch, then merge
+    background-image: url("//res.cloudinary.com/hollyandpine/image/upload/c_scale,w_1600/v1511467216/Product%20Images/Group%20Photos/69CE9FE4-F0EA-468B-8195-8336BCA5C11E.jpg");
+}
+
 .banner-content {
     padding: 235px 0;
     margin-top: 80px;
