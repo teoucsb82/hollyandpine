@@ -11,14 +11,12 @@ section
       tr
         th Date
         th Title
-        th Image
         th.text-right Actions
     tbody
       - @landing_pages.each do |landing_page|
         tr
           td = landing_page.created_at.localtime.strftime('%Y-%m-%d %l:%M %p')
           td = landing_page.title
-          td = image_tag(landing_page.main_image, class: 'img-responsive')
           td.text-right 
             = link_to landing_page_path(landing_page), class: 'btn btn-info' do
               i.fa.fa-eye

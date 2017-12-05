@@ -1,3 +1,11 @@
+- if @landing_page.errors.any?
+  .panel.panel-danger
+    .panel-heading
+      h1.panel-title Please fix the following errors and resubmit the form
+    .panel-body
+      ul
+        - @landing_page.errors.full_messages.each do |msg|
+          li = msg
 = form_for([:admin, @landing_page], class: 'form-horizontal') do |f|
   .row
     .col-sm-6
@@ -40,4 +48,4 @@
     = f.label :body, class: 'control-label'
     = f.text_area :body, class: 'form-control', placeholder: 'enter html'
   .form-group
-    = f.submit 'Create Landing Page', class: 'btn btn-primary btn-lg btn-block'
+    = f.submit nil, class: 'btn btn-primary btn-lg btn-block'

@@ -14,7 +14,7 @@ module Admin
       @landing_page = LandingPage.new(landing_page_params)
 
       if @landing_page.save
-        redirect_to admin_landing_page_path(@landing_page)
+        redirect_to admin_landing_pages_path
       else
         render :new
       end
@@ -25,7 +25,7 @@ module Admin
 
     def update
       if @landing_page.update_attributes(landing_page_params)
-        redirect_to admin_landing_page_path(@landing_page)
+        redirect_to admin_landing_pages_path
       else
         render :edit
       end

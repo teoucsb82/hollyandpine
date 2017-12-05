@@ -1,2 +1,49 @@
-h1 LandingPages#show
-p Find me in app/views/landing_pages/show.html.slim
+header
+  #header-banner data-background-url="#{@landing_page.cover_image}"
+    .banner-content.single-page.text-center
+      .banner-border
+        .banner-info
+          h1 = @landing_page.title
+          p = @landing_page.subtitle
+#page-content.container
+  section#blog
+    .row
+      .col-sm-8.col-md-9
+        .blog.block.post-content-area
+          = image_tag(@landing_page.main_image, class: 'img-responsive')
+          .post-info-box
+            h3 = @landing_page.title
+            p.post-meta
+              | Posted #{@landing_page.created_at.localtime.strftime('%a, %e %b %Y')}
+            p = @landing_page.body.html_safe
+      .col-sm-4.col-md-3.blog-sidebar
+        .blog.block.categories-sidebar-widget
+          h4 CATEGORIES coming soon
+          / .post-category
+          /   a href="#" 
+          /     | Blog
+          /     span.pull-right (3)
+          / .post-category
+          /   a href="#" 
+          /     | Photography
+          /     span.pull-right (7)
+          / .post-category
+          /   a href="#" 
+          /     | Travel
+          /     span.pull-right (2)
+          / .post-category
+          /   a href="#" 
+          /     | Videography
+          /     span.pull-right (3)
+        .space-50 &nbsp;
+        .blog.block.blog-posts-widget
+          .widget-title
+            h4 RECENT POSTS
+          .blog-posts-small
+            - @recent_landing_pages.each_with_index do |landing_page, i|
+              .blog-post-small class="#{'first-post' if i == 0}#{'last-post' if i == @recent_landing_pages.size - 1}"
+                = link_to landing_page_path(landing_page) do
+                  = image_tag(landing_page.main_image, size: '50')
+                = link_to landing_page.title, landing_page_path(landing_page)
+                p
+                  | Posted on #{landing_page.created_at.localtime.strftime('%a, %e %b %Y')}
