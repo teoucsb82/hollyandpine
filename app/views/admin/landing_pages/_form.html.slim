@@ -1,0 +1,43 @@
+= form_for([:admin, @landing_page], class: 'form-horizontal') do |f|
+  .row
+    .col-sm-6
+      h3 Page Info
+      .form-group
+        = f.label :title, class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_field :title, class: 'form-control', placeholder: 'Landing Page Title'
+      .form-group
+        = f.label :subtitle, class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_field :subtitle, class: 'form-control', placeholder: 'Landing Page Title'
+      .form-group
+        = f.label :cover_image, 'Cover Image Url', class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_field :cover_image, class: 'form-control', placeholder: 'Enter Image URL'
+      .form-group
+        = f.label :main_image, 'Main Image Url', class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_field :main_image, class: 'form-control', placeholder: 'Enter Image URL'
+    .col-sm-6
+      h3 Meta Content
+      .form-group
+        .form-group
+        = f.label :meta_keywords, class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_field :meta_keywords,
+            class: 'form-control',
+            placeholder: 'enter, keywords, separated, by, commas (70 char max)',
+            maxlength: 70
+      .form-group
+        = f.label :meta_description, class: 'col-sm-2 control-label text-right'
+        .col-sm-10
+          = f.text_area :meta_description,
+          class: 'form-control',
+          placeholder: 'Enter meta description (160 char max)',
+          maxlength: 160,
+          rows: 3
+  .form-group
+    = f.label :body, class: 'control-label'
+    = f.text_area :body, class: 'form-control', placeholder: 'enter html'
+  .form-group
+    = f.submit 'Create Landing Page', class: 'btn btn-primary btn-lg btn-block'
