@@ -5,4 +5,4 @@
 $ ->
   $('[data-background-url]').ready ->
     imageUrl = $('[data-background-url]').data('background-url')
-    $('#header-banner').css('background-image', 'url(' + imageUrl + ')');
+    $('[data-background-url]').css('background-image', 'url(' + imageUrl + ')');
