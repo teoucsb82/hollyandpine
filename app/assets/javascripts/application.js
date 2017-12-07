@@ -21,6 +21,7 @@
 //= require hide-nav
 //= require validator.min
 //= require form-scripts
+//= require tinymce/themes/modern/theme
 //= require_directory ../../../vendor/assets/javascripts/tinymce/
 //= require home
 //= require services
