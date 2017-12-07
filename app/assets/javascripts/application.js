@@ -21,6 +21,7 @@
 //= require hide-nav
 //= require validator.min
 //= require form-scripts
+//= require tinymce/tinymce.min
 //= require home
 //= require services
 //= require admin/landing_pages
