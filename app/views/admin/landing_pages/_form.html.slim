@@ -46,6 +46,8 @@
           rows: 3
   .form-group
     = f.label :body, class: 'control-label'
-    = f.text_area :body, class: 'form-control', placeholder: 'enter html'
+    = f.text_area :body, class: 'form-control tinymce', placeholder: 'enter html'
   .form-group
     = f.submit nil, class: 'btn btn-primary btn-lg btn-block'
+
+= tinymce
