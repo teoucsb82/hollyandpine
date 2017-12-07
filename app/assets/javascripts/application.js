@@ -22,6 +22,7 @@
 //= require validator.min
 //= require form-scripts
 //= require tinymce/tinymce.min
+//= require tinymce/themes/modern/theme.min
 //= require home
 //= require services
 //= require admin/landing_pages
