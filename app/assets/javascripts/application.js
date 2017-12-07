@@ -24,3 +24,4 @@
 //= require home
 //= require services
 //= require admin/landing_pages
+//= require tinymce
