@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :orders, only: [:show, :index, :destroy]
   end
   resources :about, only: [:index]
+  resources :blog, only: [:index, :show]
   resources :contact, only: [:index]
   resources :faq, only: [:index]
   resources :home, only: [:index]
