@@ -34,6 +34,8 @@ header
               li.divider
               - services.each do |service|
                 li = link_to service.name, service_path(service.id)
+          li class="#{'active' if current_page?(blog_index_path)}"
+            = link_to 'BLOG', blog_index_path
           li class="#{'active' if current_page?(faq_index_path)}"
             = link_to 'FAQ', faq_index_path
           li class="#{'active' if current_page?(contact_index_path)}"

@@ -34,6 +34,7 @@ group :development, :test do
   gem 'minitest'
   gem 'pry'
   gem 'rspec-rails'
+  gem 'rubocop'
   gem 'spring'
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
