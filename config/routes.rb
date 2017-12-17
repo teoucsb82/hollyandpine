@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :contact, only: [:index]
   resources :faq, only: [:index]
   resources :home, only: [:index]
-  resources :landing_pages, path: 'blog', only: [:show]
+  # resources :landing_pages, path: 'blog', only: [:show]
   resources :orders, only: [:new, :create, :show]
   resources :services, only: [:index, :show]
   resources :terms_and_conditions, path: 'terms-and-conditions', only: [:index]

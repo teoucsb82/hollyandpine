@@ -4,5 +4,8 @@ class BlogController < ApplicationController
 	end
 
 	def show
+		@landing_page = LandingPage.friendly.find(params[:id])
+		@recent_landing_pages = LandingPage.all.last(5)
+		render 'landing_pages/show'
 	end
 end
