@@ -1,23 +1,23 @@
-- if @landing_page.errors.any?
+- if @blog.errors.any?
   .panel.panel-danger
     .panel-heading
       h1.panel-title Please fix the following errors and resubmit the form
     .panel-body
       ul
-        - @landing_page.errors.full_messages.each do |msg|
+        - @blog.errors.full_messages.each do |msg|
           li = msg
-= form_for([:admin, @landing_page], class: 'form-horizontal') do |f|
+= form_for([:admin, @blog], class: 'form-horizontal') do |f|
   .row
     .col-sm-6
       h3 Page Info
       .form-group
         = f.label :title, class: 'col-sm-2 control-label text-right'
         .col-sm-10
-          = f.text_field :title, class: 'form-control', placeholder: 'Landing Page Title'
+          = f.text_field :title, class: 'form-control', placeholder: 'Blog Title'
       .form-group
         = f.label :subtitle, class: 'col-sm-2 control-label text-right'
         .col-sm-10
-          = f.text_field :subtitle, class: 'form-control', placeholder: 'Landing Page Title'
+          = f.text_field :subtitle, class: 'form-control', placeholder: 'Blog Title'
       .form-group
         = f.label :cover_image, 'Cover Image Url', class: 'col-sm-2 control-label text-right'
         .col-sm-10
