@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.all.reverse
+    @blogs = Blog.active.reverse
   end
 
   def show
