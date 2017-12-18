@@ -1,0 +1,16 @@
+.col-sm-4
+  .post-block
+    = link_to blog_path(blog) 
+      = image_tag(blog.main_image)
+    .small-post-text
+      h5 = link_to blog.title, blog_path(blog)      
+      p.small-post-meta = blog.created_at.strftime('%B %e, %Y')
+      / Todo: Parse body HTML into readable text here.
+      / p.space-bottom = blog.body.truncate(30)
+      p.small-post-footer
+        = link_to 'READ MORE', blog_path(blog)      
+        / span.post-icons.pull-right
+        /   a href="#x" 
+        /     i.lnr.lnr-thumbs-up
+        /   a href="#x" 
+        /     i.lnr.lnr-bubble
