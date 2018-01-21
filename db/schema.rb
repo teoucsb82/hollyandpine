@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171205043403) do
+ActiveRecord::Schema.define(version: 20171218012115) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "country"
@@ -25,6 +25,22 @@ ActiveRecord::Schema.define(version: 20171205043403) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "blogs", force: :cascade do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.string   "cover_image"
+    t.string   "main_image"
+    t.text     "body"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "slug"
+    t.string   "meta_keywords"
+    t.string   "meta_description"
+    t.boolean  "active"
+  end
+
+  add_index "blogs", ["slug"], name: "index_blogs_on_slug", unique: true
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
@@ -37,21 +53,6 @@ ActiveRecord::Schema.define(version: 20171205043403) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
-
-  create_table "landing_pages", force: :cascade do |t|
-    t.string   "title"
-    t.string   "subtitle"
-    t.string   "cover_image"
-    t.string   "main_image"
-    t.text     "body"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-    t.string   "slug"
-    t.string   "meta_keywords"
-    t.string   "meta_description"
-  end
-
-  add_index "landing_pages", ["slug"], name: "index_landing_pages_on_slug", unique: true
 
   create_table "orders", force: :cascade do |t|
     t.string   "name"

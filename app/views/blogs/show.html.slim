@@ -1,21 +1,21 @@
 header
-  #header-banner data-background-url="#{@landing_page.cover_image}"
+  #header-banner data-background-url="#{@blog.cover_image}"
     .banner-content.single-page.text-center
       .banner-border
         .banner-info
-          h1 = @landing_page.title
-          p = @landing_page.subtitle
+          h1 = @blog.title
+          p = @blog.subtitle
 #page-content.container
   section#blog
     .row
       .col-sm-8.col-md-9
         .blog.block.post-content-area
-          = image_tag(@landing_page.main_image, class: 'img-responsive')
+          = image_tag(@blog.main_image, class: 'img-responsive')
           .post-info-box
-            h3 = @landing_page.title
+            h3 = @blog.title
             p.post-meta
-              | Posted #{@landing_page.created_at.localtime.strftime('%a, %e %b %Y')}
-            p = @landing_page.body.html_safe
+              | Posted #{@blog.created_at.localtime.strftime('%a, %e %b %Y')}
+            p = @blog.body.html_safe
       .col-sm-4.col-md-3.blog-sidebar
         .blog.block.categories-sidebar-widget
           h4 CATEGORIES coming soon
@@ -40,10 +40,10 @@ header
           .widget-title
             h4 RECENT POSTS
           .blog-posts-small
-            - @recent_landing_pages.each_with_index do |landing_page, i|
-              .blog-post-small class="#{'first-post' if i == 0}#{'last-post' if i == @recent_landing_pages.size - 1}"
-                = link_to blog_path(landing_page) do
-                  = image_tag(landing_page.main_image, size: '50')
-                = link_to landing_page.title, blog_path(landing_page)
+            - @recent_blogs.each_with_index do |blog, i|
+              .blog-post-small class="#{'first-post' if i == 0}#{'last-post' if i == @recent_blogs.size - 1}"
+                = link_to blog_path(blog) do
+                  = image_tag(blog.main_image, size: '50')
+                = link_to blog.title, blog_path(blog)
                 p
-                  | Posted on #{landing_page.created_at.localtime.strftime('%a, %e %b %Y')}
+                  | Posted on #{blog.created_at.localtime.strftime('%a, %e %b %Y')}
