@@ -7,7 +7,7 @@ header
             span.space-left
             span.right
               = link_to 'Orders', admin_orders_path
-              = link_to 'Landing Pages', admin_landing_pages_path
+              = link_to 'Blog Posts', admin_blogs_path
               = link_to destroy_user_session_path, method: :delete
                 i.fa.fa-sign-out
     .container
@@ -34,8 +34,8 @@ header
               li.divider
               - services.each do |service|
                 li = link_to service.name, service_path(service.id)
-          li class="#{'active' if current_page?(blog_index_path)}"
-            = link_to 'BLOG', blog_index_path
+          li class="#{'active' if current_page?(blogs_path)}"
+            = link_to 'BLOG', blogs_path
           li class="#{'active' if current_page?(faq_index_path)}"
             = link_to 'FAQ', faq_index_path
           li class="#{'active' if current_page?(contact_index_path)}"
