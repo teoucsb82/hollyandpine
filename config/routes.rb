@@ -5,15 +5,14 @@ Rails.application.routes.draw do
   root 'home#index'
   devise_for :users
   namespace :admin do
-    resources :landing_pages, path: 'blog', except: [:show]
+    resources :blogs, except: [:show]
     resources :orders, only: [:show, :index, :destroy]
   end
   resources :about, only: [:index]
-  resources :blog, only: [:index, :show]
+  resources :blogs, path: 'blog', only: [:index, :show]
   resources :contact, only: [:index]
   resources :faq, only: [:index]
   resources :home, only: [:index]
-  # resources :landing_pages, path: 'blog', only: [:show]
   resources :orders, only: [:new, :create, :show]
   resources :services, only: [:index, :show]
   resources :terms_and_conditions, path: 'terms-and-conditions', only: [:index]

@@ -23,4 +23,5 @@
 //= require form-scripts
 //= require home
 //= require services
-//= require admin/landing_pages
+//= require admin/blog
+//= require tinymce
